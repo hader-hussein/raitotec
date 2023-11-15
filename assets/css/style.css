@@ -1,0 +1,342 @@
+@font-face{
+     src:url(../font/Cairo/static/Cairo-Bold.ttf);
+     font-family: 'Cairo', sans-serif;
+     font-weight: 700;
+}
+@font-face{
+     src:url(../font/Cairo/static/Cairo-Regular.ttf);
+     font-family: 'Cairo', sans-serif;
+     
+     font-weight: 400;
+}
+@font-face{
+     src:url(../font/Cairo/static/Cairo-Medium.ttf);
+     font-family: 'Cairo', sans-serif;
+     
+     font-weight: 500;
+}
+@font-face{
+     src:url(../font/Cairo/static/Cairo-Light.ttf);
+     font-family: 'Cairo', sans-serif;
+     
+     font-weight: 300;
+}
+@font-face{
+     src:url(../font/Cairo/static/Cairo-ExtraBold.ttf);
+     font-family: 'Cairo', sans-serif;
+          font-weight: 800;
+}
+body{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+[dir="rtl"] body{
+     font-family: 'Cairo', sans-serif;
+}
+[dir="ltr"] body{
+     font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+     margin: 0px;
+     padding: 0px;
+}
+ul,ol{
+     padding-inline-start: 0px;
+     padding-left: 0px;
+}
+a:hover,a{
+     text-decoration: none;
+}
+ul li{
+     list-style: none;
+}
+/* Colors */
+:root {
+     --color-default: #000000;
+     --color-primary: #6C727D;
+     --color-secondary: #0A1426;
+     --color-hover: #ffffff;
+     --color-back:#9EE03A
+ 
+   }
+   .component-stert{
+     position: fixed;
+     background-color: var(--color-default);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     z-index: 10000;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+     -moz-background-color: var((--color-default));
+     -webkit-background-color:var((--color-default)) ;
+     -o-background-color: var((--color-default));
+ 
+ }
+   .component--intro{
+     width: 100%;
+     height: 100%; 
+     animation: sk-chase 5s infinite linear both;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     
+ }
+ .component--intro img{
+ width:301px ;
+ height: auto;
+ 
+ }
+/*nav*/
+.navbar-brand img{
+width: 155px;
+}
+.navber-index .navbar-nav .nav-item{
+     margin: 0px 8px;
+}
+.navber-index .navbar-nav .nav-link{
+     font-size: 16px;
+     color: #fff;
+     font-weight: 600;
+     text-transform: capitalize;
+}
+.navber-index .navbar-nav .nav-item:hover{
+     background: linear-gradient(100deg, #0B555E , #428315cc );
+     border-radius: 8px;
+     color: var(--color-hover);
+}
+.navber-index .navbar-nav .active {
+     color: var(--color-back);
+     font-size: 18px;
+     line-height: 40px;
+     text-transform: capitalize;
+     border-bottom: 1px solid var(--color-back);
+     font-weight: 600;
+     padding-bottom: 6px;
+     padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+ }
+ .nav-login-lang{
+     border: 1px solid var(--color-back);
+     padding: 0px 3px;
+     border-radius: 8px;
+      }
+      .navber-index.scrolled {
+          background: var(--color-default) !important;
+          border-bottom: 1px solid var(--color-back);
+          transition: 0.8s;
+      }
+/*end-nav*/
+/*carousel*/
+.corousel-index{
+     height: 100vh;
+}
+.corousel-index .carousel-inner,.corousel-index .carousel-item{
+     height: 100%;
+}
+.img-slider{
+     position: relative;
+}
+.overlay {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     bottom: 0;
+     z-index: 1;
+     object-fit: cover;
+     object-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-color: #00000036;
+ }
+ .corousel-index .carousel-caption {
+     z-index: 2;
+     bottom: 30%;
+ }
+ .corousel-index .carousel-caption h5{
+font-size: 35px;
+font-weight: bold;
+text-transform: capitalize;
+line-height: 25px;
+color: var(--color-hover);
+ }
+ .corousel-index .carousel-caption p{
+     font-size: 16px;
+     color: var(--color-hover);
+     font-weight: 400;
+     line-height: 31px;
+ }
+ .button-stert{
+     background-color: var(--color-back);
+     color: var(--color-hover);
+     border-radius: 8px;
+     font-weight: bold;
+     font-size: 16px;
+ }
+ .button-stert:hover{
+     color: var(--color-hover);
+     background: linear-gradient(100deg, #0B555E , #428315cc );
+ }
+ /*end-carousel*/
+   
+ /*about*/
+ .title-title{
+     color: var(--color-secondary);
+     font-size: 30px;
+     text-transform: capitalize;
+     font-weight: bold;
+     line-height: 35px;
+
+ }
+ .p-decerption{
+     font-size: 18px;
+     line-height: 30px;
+     font-weight: 400;
+     color: var(--color-primary);
+ }
+ .video-date {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     position: relative;
+     cursor: pointer;
+ 
+ }
+ .div-button {
+     position: absolute;
+     bottom: 0px;
+     top: 1px;
+     left: 0;
+     margin: 0;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     cursor: pointer;
+ }
+ #myBtn {
+     width: 50px;
+     height: 50px;
+     background-image: url(../img/play.png);
+     background-repeat: no-repeat;
+     z-index: 999;
+     background-size: cover;
+     cursor: pointer !important;
+     border: 0px;
+     border-radius: 50%;
+ }
+ .component-video video {
+     width: 100%;
+     height: 300px;
+     border-radius: 8px;
+ }
+ .component-video:hover #myBtn {
+     background-image: url(../img/play-video.png);
+ }
+ /*end-about*/
+ /*services*/
+ .content-services .card{
+     border: 0px;
+     box-shadow:  0px 5px 10px #6c727d45;;
+ }
+ .content-services .card:hover{
+     transform: scale(1.02);
+ }
+ .content-services .card h3{
+     color: var(--color-primary);
+     font-size: 20px;
+     line-height: 30px;
+     font-weight: 600;
+     text-transform: capitalize;
+ }
+ .content-services .card p{
+     color: var(--color-primary);
+     font-size: 16px;
+     line-height: 23px;
+     font-weight: 400;
+ }
+.btn-primar{
+background-color: var(--color-back);
+color: var(--color-hover);
+font-weight: 600;
+font-size: 16px;
+}
+.btn-primar:hover{
+     background: linear-gradient(100deg, #0B555E , #428315cc );
+     color: var(--color-hover);    
+}
+.img-fluid{
+     border-top-right-radius: 8px;
+     border-top-left-radius: 8px;
+}
+ /*end-services*/
+ .component-adver{
+     background-color: #17aabd;
+     padding: 40px 0px;
+ }
+ .defintion-abver h6{
+     font-size: 30px;
+     font-weight: 600;
+     line-height: 30px;
+     color: var(--color-hover);
+ }
+ .defintion-abver p{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 30px;
+     color: var(--color-hover);
+ }
+ .content-erp .card{
+     border: 0px;
+ }
+ .content-erp .card img{
+     width: 50px;
+     height: 50px;
+ }
+ .content-erp .card h3{
+     color: var(--color-primary);
+     font-size: 18px;
+     line-height: 30px;
+     font-weight: 600;
+     text-transform: capitalize; 
+ }
+ .content-erp .card p{
+     color: var(--color-primary);
+     font-size: 16px;
+     line-height: 23px;
+     font-weight: 400;
+ }
+ .component-custmer{
+     background-image: url(../img/slider.png);
+     background-size: cover;
+    position: relative;
+     
+ }
+ .over{
+     position: absolute;
+    background-color: #000000cc;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+ }
+ .row-custemer{
+     position: relative;
+     color: var(--color-hover);
+ }
+ .component-team-new img{
+     width: 128px !important;
+     height: auto;
+ }
+ .component-team-new img:hover{
+    
+          transform: scale(1.02);
+ }
