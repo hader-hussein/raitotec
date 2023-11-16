@@ -52,6 +52,12 @@ a:hover,a{
 ul li{
      list-style: none;
 }
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}
+
 /* Colors */
 :root {
      --color-default: #000000;
@@ -182,14 +188,16 @@ color: var(--color-hover);
      line-height: 31px;
  }
  .button-stert{
-     background-color: var(--color-back);
-     color: var(--color-hover);
+   
+    background-color: var(--color-hover);
+     color: var(--color-secondary);
      border-radius: 8px;
      font-weight: bold;
      font-size: 16px;
  }
  .button-stert:hover{
      color: var(--color-hover);
+    
      background: linear-gradient(100deg, #0B555E , #428315cc );
  }
  /*end-carousel*/
@@ -241,6 +249,8 @@ color: var(--color-hover);
      cursor: pointer !important;
      border: 0px;
      border-radius: 50%;
+     filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+
  }
  .component-video video {
      width: 100%;
@@ -249,6 +259,8 @@ color: var(--color-hover);
  }
  .component-video:hover #myBtn {
      background-image: url(../img/play-video.png);
+     filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+
  }
  /*end-about*/
  /*services*/
@@ -259,38 +271,50 @@ color: var(--color-hover);
  .content-services .card:hover{
      transform: scale(1.02);
  }
- .content-services .card h3{
+ .content-services .card h3,.content-blog .card h3{
      color: var(--color-primary);
      font-size: 20px;
      line-height: 30px;
      font-weight: 600;
      text-transform: capitalize;
  }
- .content-services .card p{
+ .content-blog .card h3{
+    font-size: 18px;
+ }
+ .content-services .card p,.content-blog .card p{
      color: var(--color-primary);
      font-size: 16px;
      line-height: 23px;
      font-weight: 400;
  }
 .btn-primar{
-background-color: var(--color-back);
+    background: linear-gradient(100deg, #0B555E , #428315cc );
+
 color: var(--color-hover);
 font-weight: 600;
 font-size: 16px;
 }
 .btn-primar:hover{
-     background: linear-gradient(100deg, #0B555E , #428315cc );
+    background-color: var(--color-back);
      color: var(--color-hover);    
 }
 .img-fluid{
      border-top-right-radius: 8px;
      border-top-left-radius: 8px;
+     height: 245px;
+}
+.services-other .img-fluid{
+height: 179px;
 }
  /*end-services*/
  .component-adver{
-     background-color: #17aabd;
-     padding: 40px 0px;
+    background: url(../img/Artboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+     padding: 65px 0px;
  }
+ 
  .defintion-abver h6{
      font-size: 30px;
      font-weight: 600;
@@ -309,6 +333,7 @@ font-size: 16px;
  .content-erp .card img{
      width: 50px;
      height: 50px;
+     margin: auto;
  }
  .content-erp .card h3{
      color: var(--color-primary);
@@ -324,7 +349,7 @@ font-size: 16px;
      font-weight: 400;
  }
  .component-custmer{
-     background-image: url(../img/slider.png);
+     background-image: url(../img/Artboard.png);
      background-size: cover;
     position: relative;
      
@@ -343,9 +368,181 @@ font-size: 16px;
  }
  .component-team-new img{
      width: 128px !important;
-     height: auto;
+     height: 128px;
+     margin: auto;
  }
  .component-team-new img:hover{
     
           transform: scale(1.02);
  }
+ .sales-img{
+    width: 100%;
+    height: 475px;
+ }
+ /*bolg*/
+.content-blog .card{
+border: 0px;
+}
+.content-blog .card img{
+    height: 200px;
+}
+ /*bolg*/
+ .content-project {
+    background: linear-gradient(100deg, #0B555E , #428315cc );
+    padding: 65px 0px;
+}
+.shape-tri {
+    position: absolute;
+    left: 110px;
+    width: 500px;
+}
+.shape-left {
+    position: absolute;
+    top: -159px;
+    width: 420px;
+    right: -400px;
+}
+.button-wiet{
+    background-color: var(--color-hover);
+    border-radius: 8px;
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.button-wiet:hover{
+    color: var(--color-hover);
+    background:var(--color-back)
+}
+.pb-55 {
+    padding-bottom: 55px;
+}
+.pt-55{
+    padding-top: 65px;
+}
+/*footer*/
+.component-footer{
+    background-color: #1d2426;
+    color: var(--color-primary);
+    position: relative;
+}
+.img-footer-logo{
+    width: 138px;
+    height: 69px;
+}
+.p-footer{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.a-google a img{
+    width: 130px;
+    height: 130px;
+}
+.title-footer{
+    font-size: 20px;
+    color: var(--color-hover);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.footer-nav li a,.contact-content a{
+    color: var(--color-primary);
+    font-size: 16px;
+}
+.footer-nav li{
+    margin-bottom: 15px;
+}
+.footer-nav li i,.contact-content a i{
+    margin: 0px 8px;
+    color: var(--color-hover);
+}
+.footer-nav li a:hover,
+.contact-content a:hover
+{
+    color: #17AABD;
+}
+.footer-copyright{
+    border-top: 1px solid #CED0D4;
+    padding: 30px 0 ;
+}
+
+.shape-right {
+    position: absolute;
+    top: 60px;
+   
+    width: 41%;
+}
+[dir="rtl"] .shape-right {
+    
+    left: 87px;
+}
+.row-footer{
+    position: relative;
+    z-index: 1;
+}
+.button-mor{
+    background: linear-gradient(100deg, #0B555E , #428315cc );
+    color: var(--color-hover);
+}
+/*end-footer*/
+.component-reviews{
+    background-color: var(--color-default);
+}
+.slider-1 {
+    border: 4px solid #FFFFFF;
+    padding: 0px 10px 40px 10px;
+    border-radius: 50px;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center;
+
+}
+.slider-img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto;
+    top: -40px;
+    position: relative;
+}
+.slider-img img{
+    width: 100%;
+    height: 100%;
+}
+.custemer-reviews .carousel-item{
+    margin-top: 40px;
+}
+.component-team-new .owl-nav{
+    margin: 25px 30px 0px;
+}
+.component-team-new .owl-nav button{
+   
+    background: linear-gradient(100deg, #0B555E , #428315cc ) !important;
+    margin: 0px 6px;
+}
+.component-team-new .owl-nav button span{
+    color: var(--color-hover);
+    font-size: 18px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+
+    padding: 10px 20px !important;
+    border-radius: 8px;
+}
+.navbar-toggler-icon {
+
+    filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+
+}
+.content-services .card-body {
+     
+    display: grid;
+    justify-items: start;
+}
+@media (max-width:900px) {
+    .content-services .card-body {
+     
+        justify-items: center;
+    }
+}

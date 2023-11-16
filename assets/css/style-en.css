@@ -1,0 +1,12 @@
+[dir="ltr"] .me-auto {
+     margin-left: auto!important;
+     margin-right:0px !important
+ }
+ [dir="ltr"] .text-start {
+     text-align: right
+     !important;
+ }
+ [dir="ltr"] .shape-right {
+    
+     right: 87px;
+ }
