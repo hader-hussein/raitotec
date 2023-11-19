@@ -103,4 +103,31 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-    
+//toggle between hiding and showing the dropdown content */
+function myFunction() {
+ 
+  var element = document.getElementById("myDIV");
+   element.classList.toggle("show");
+   document.getElementById("myDropdown").classList.toggle("show");
+   
+
+}
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+/****/    

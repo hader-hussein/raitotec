@@ -10,3 +10,7 @@
     
      right: 87px;
  }
+ [dir="ltr"] .component-whatsapp {
+    right: 2%;
+    text-align: right;
+}
