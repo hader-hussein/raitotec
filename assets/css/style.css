@@ -184,6 +184,9 @@ color: var(--color-hover);
      .corousel-index .carousel-caption h5{
           font-size: 20px;
      }
+     .col-button-con{
+        margin-top: 30px;
+     }
  }
  .corousel-index .carousel-caption p{
      font-size: 16px;
@@ -640,7 +643,9 @@ border: 0px;
     width: 100%;
     height: 290px;
     object-fit: cover;
+    transform: scale(1);
 }
+
 .date-time {
     position: absolute;
     top: 40px;
@@ -687,7 +692,7 @@ border: 0px;
 .title-p,.date{
     color: var(--color-primary);
     font-size: 16px;
-    line-height: 23px;
+    line-height: 25px;
     font-weight: 400;
 }
 .card-blog:hover .card-body {
@@ -744,6 +749,9 @@ border: 0px;
     line-height: 23px;
     font-weight: bold;
 }
+.component-wor a:hover{
+    color: var(--color-back);
+}
 .component-wor .card{
     border: 0px;
     border-bottom: 1px solid rgba(10, 20, 38, 0.1);
@@ -789,4 +797,55 @@ border: 0px;
     width: 30px;
     margin-right: 15px;
 }
+.defintion-blog{
+    border: 1px solid #70707050;
+}
+.toc_list li{
+    list-style-type: decimal;
+    margin-bottom: 8px;
+}
+.toc_list li a{
+    color: var(--color-primary);
+    font-size: 16px;
+}
+::marker {
+    color: var(--color-primary);
+}
+.card-definti-blog .card-body{
+    border: 0px;
+}
+.card-definti-blog{
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+}   
+
+.content-project-blog{
+    padding: 40px 0px;
+    border-radius: 20px;
+}
+.title-id{
+    padding-top: 100px;
+}
+.span-text{
+    background-color: #f8f8f8;
+    color: var(--color-primary);
+    font-size: 16px;
+}
+.span-text:hover{
+    background: linear-gradient(100deg, #0B555E , #428315cc ) !important;
+    color: var(--color-hover);
+}
 /*end-blog*/
+/*pricess*/
+.col-peicess{
+    border: 1px solid #cbc8c8;
+    border-radius: 16px;
+}
+.span-price{
+    color: var(--color-back);
+    font-size: 40px;
+}
+.nk-pricing-body i{
+    font-size: 20px;
+     color: var(--color-back);
+}
+/*end-pricess*/
