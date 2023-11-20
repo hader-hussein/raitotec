@@ -325,6 +325,7 @@ line-height: 18px;
 }
 .services-other .img-fluid{
 height: 179px;
+object-fit: contain;
 }
  /*end-services*/
  .component-adver{
@@ -464,6 +465,11 @@ border: 0px;
     color: var(--color-hover);
     font-weight: 700;
     text-transform: capitalize;
+}
+@media (min-width:600px) {
+    .title-footer{
+        font-size: 16px;
+    }
 }
 .footer-nav li a,.contact-content a{
     color: var(--color-primary);
