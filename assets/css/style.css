@@ -263,7 +263,7 @@ color: var(--color-hover);
      height: 50px;
      background-image: url(../img/play.png);
      background-repeat: no-repeat;
-     z-index: 999;
+     z-index: 1;
      background-size: cover;
      cursor: pointer !important;
      border: 0px;
@@ -862,13 +862,9 @@ font-size: 18px;
 .component-whatsapp {
     bottom: 5%;
     z-index: 4;
-    right: 15px;
+  
 }
-.component-phone{
-    bottom: 10%;
-    z-index: 4;
-    right: 15px; 
-}
+
 [dir="rtl"] .component-whatsapp {
     left: 2%;
     text-align: left;
@@ -879,21 +875,17 @@ font-size: 18px;
     height: 50px;
     object-fit: cover;
 }
-.compoent-price-hadder .dropdown-menu {
+.compoent-chat-hadder .btn-group .dropdown-menu {
     background-color: var(--color-back);
     padding-top: 29px;
     z-index: 112;
     margin-top: 10px;
+    
+        --bs-dropdown-min-width: 24rem;
   
 }
-.btn.show {
-   
-    background-color: #D8B76F;
-    color: #5E5C64;
-    position: absolute;
-    z-index: 1000;
-}
-.compoent-price-hadder .dropdown-menu.show {
+
+.compoent-chat-hadder .dropdown-menu.show {
 
     position: relative;
 }
@@ -912,5 +904,54 @@ font-size: 18px;
 .btn-submit img {
     width: 18px;
     height: 18px;
+}
+.btn-btn{
+    background-color: var(--color-back);
+    border-radius: 50%;
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius:50% !important;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    color: var(--color-hover);
+}
+.btn-btn span i{
+    font-size: 20px;
+}
+.btn-btn:hover{
+    background-color: var(--color-back);
+    border: 0px;
+    
+}
+.btn-my,.btn.show,.btn-my:hover{
+    background-color: var(--color-back);
+    border-radius: 50%;
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius:50% !important;
+    width: 63px;
+    height: 63px;
+    align-items: center;
+    color: var(--color-hover); 
+}
+.btn-my img{
+width: 40px;
+height: 40px;
+}
+.phone-component{
+    background-color: var(--color-back);
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    color: var(--color-hover);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.phone-component a{
+color: var(--color-hover);
+}
+.dropdown-content{
+    bottom: 116%;
+    text-align: right;
 }
 /*end-login*/
