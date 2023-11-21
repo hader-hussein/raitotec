@@ -948,7 +948,11 @@ font-size: 18px;
     left: 2%;
     text-align: left;
 }
-
+@media (max-width:600px) {
+    [dir="rtl"] .component-whatsapp {
+        right: 2%;
+    }   
+}
 .component-whatsapp img{
     width: 50px;
     height: 50px;
