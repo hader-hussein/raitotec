@@ -628,10 +628,17 @@ border: 0px;
     filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
 
 }
+@media (min-width:900px) {
 .content-services .card-body p{
     line-height: 1.45em !important;
-    height: calc(4* 1.45em);
+    height: calc(3* 1.45em);
     overflow: hidden;
+}
+.content-services-beg .card-body p{
+    line-height: 1.45em !important;
+    height: calc(6* 1.45em);
+    overflow: hidden;
+}
 }
 @media (max-width:900px) {
     .content-services .card-body {
@@ -1044,3 +1051,5 @@ color: var(--color-hover);
     text-align: left;
 }
 /*end-login*/
+
+  .dropdown:hover .dropdown-menu {display: block;}
