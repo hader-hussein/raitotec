@@ -49,15 +49,7 @@ $(document).ready(function(){
       }
     );
    });
-   //activ-link-nav//
-const currentlocation = location.href; 
-const menuitem = document.querySelectorAll('.navber-index .nav-item .nav-link');
- const menulength = menuitem.length
-for (let i = 0; i<menulength; i++){
- if(menuitem[i].href === currentlocation) {
-   menuitem[i].className = "active" 
-    }
-}
+ 
 // ******************VIDEO*****************************
 
 var myVideo = document.getElementById('myVideo');
