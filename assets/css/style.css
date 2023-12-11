@@ -683,6 +683,7 @@ display: none;
     height: 320px;
     display: flex;
     align-items: center;
+    background: #000;
 }
 .page-title {
     color: white;
@@ -1127,4 +1128,75 @@ color: var(--color-hover);
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
+}
+@media (min-width: 1700px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1550px;
+    }
+    .navber-index .navbar-nav .nav-link, .navber-index .dropdown-item  {
+        font-size: 1.4em;
+    }
+    .p-decerption,.corousel-index .carousel-caption p ,
+    .defintion-abver p,.content-erp .card h3,.row-custemer p,
+    .about-item .title-title ,
+    .custemer-reviews p, .content-services .card p, .content-blog .card p,
+    .content-erp .card p ,    .toc_list li a, .form-content .form-label,.p-login 
+    {
+        font-size: 1.45em;
+    }
+    .content-services .card p, .content-blog .card p{
+        line-height: 1.45em !important;
+        height: calc(5* 1.45em);
+    
+    }
+    .btn-primar {
+     
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .content-services .card h3, .content-blog .card h3, .title-serch,
+    .content-blog .card h3 ,  .title-footer ,
+    .about-item-best .title-title,.button-stert ,.slider-title h6,.card-blog .title-card
+    {
+        font-size: 1.55em ;
+    }
+    .title-title {
+     
+        font-size: 2em;
+    }
+
+    .defintion-abver h6 {
+        font-size: 38px;
+    }
+    .content-erp .card p {
+        line-height: 30px;
+
+    }
+    .content-erp .card img {
+        width: 60px;
+        height: 60px;
+    }
+    .defintion-abver p {
+line-height: 40px;
+    }
+    .p-decerption {
+    
+        line-height: 42px;
+
+    }
+    .footer-nav li a, .contact-content a ,.p-footer ,.p-team{
+        font-size: 1.4em;
+    }
+
+    .card-definti-blog .title-card {
+     
+        font-size: 1.50em;
+    } 
+    .title-p, .date ,.title-login{
+       
+        font-size: 1.55em;
+        line-height: 32px;
+    }  
+   
+ 
 }
