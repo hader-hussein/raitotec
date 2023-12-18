@@ -222,6 +222,9 @@ color: var(--color-default);
          z-index: 2;
          bottom: 10%;
      }
+     .img-slider img{
+        object-fit: cover;
+     }
 }
 .corousel-index .carousel-caption {
     left:10%;
@@ -390,13 +393,19 @@ line-height: 18px;
 .img-fluid{
      border-top-right-radius: 8px;
      border-top-left-radius: 8px;
-     height: 245px;
+  
 }
 .component-content .p-decerption{
    text-align: justify;
 }
 .component-hadeer p{
     text-align: center;
+}
+@media (min-width:990px) {
+    .img-fluid{
+        
+        height: 245px;
+   }   
 }
  /*end-services*/
  .component-adver{
@@ -479,14 +488,27 @@ line-height: 18px;
  }
  .sales-img{
     width: 100%;
-    height: 475px;
+    height: auto;
+   
+ }
+ @media (min-width:1100px) {
+    .sales-img{
+      
+           
+            min-height: 388px;
+         
+    }
  }
  /*bolg*/
 .content-blog .card{
 border: 0px;
 }
-.content-blog .card img{
-    height: 200px;
+
+@media (min-width: 990px)
+{
+    .content-blog .card img{
+        height: 200px;
+    }
 }
  /*bolg*/
  .content-project {
@@ -1123,9 +1145,9 @@ color: var(--color-hover);
 }
 .img-or{
     width: 100%;
-    height: 300px;
+    height: auto;
     object-fit: contain;
-    max-height: 400px;
+    max-height: 300px;
 }
 .component-or{
     box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
@@ -1137,7 +1159,7 @@ color: var(--color-hover);
 }
 .img-system{
     height: auto;
-    max-height: 400px;
+   
 }
 .img-accountiong{
     width: 70px;
@@ -1225,4 +1247,32 @@ line-height: 40px;
 }
 [dir="ltr"] .component-or .text-end{
     text-align: left !important;
+}
+@media (max-width:550px) {
+    .title-title {
+font-size: 25px;
+text-align: center;
+
+    }
+    .about-item-best {
+text-align: center;
+    }
+    [dir="rtl"] .component-vision  .title-title {
+text-align: right;
+
+    }
+    [dir="ltr"] .component-vision  .title-title {
+        text-align: left;
+        
+            }
+    .row>* {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .col-button-con,  .component-adver .text-start{
+        text-align: center !important;
+    }
+   .price_box_inner{
+    margin-bottom: 5px;
+   }
 }
