@@ -46,7 +46,15 @@ font-weight:500
  .component-cta{
      position: relative;
  }
- 
+ .col-row-defintion{
+     position: sticky;
+  
+    overflow-x: auto;
+    height: 170vh;
+ }
+ .col-row-defintion::-webkit-scrollbar {
+     width: 0px;
+     } 
  @media (max-width:550px) {
      .card-definti-blog .card-body  p{
           text-align: unset;
