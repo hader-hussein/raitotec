@@ -21,6 +21,87 @@
      <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
      <link href="./assets/css/style.css" rel="stylesheet">
      <link href="./assets/css/style-en.css" rel="stylesheet">
+     <style>
+      .compoent-price-hadder {
+      position: fixed;
+      Z-INDEX: 100;
+      bottom:13%;
+  }
+  .compoent-price-hadder {
+      right: 1%;
+      text-align: left;
+  }
+ 
+  .back {
+      position: absolute;
+  
+  }
+  
+  .btn-btn {
+    background: linear-gradient(100deg, #0B555E, #428315cc);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0px;
+      border: 0px;
+      transition: all  .7s ease-in-out
+  }
+  .btn-btn:hover{
+    background: linear-gradient(100deg, #428315cc, #0B555E); 
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  }
+  .title-botton i:hover{
+    transform: rotate(260deg);
+    transition: all  .7s ease-in-out
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      --bs-dropdown-min-width: 15rem; 
+  }
+  .compoent-price-hadder .dropdown-menu {
+    background-color: #ffffff;
+    
+      z-index: 112;
+      margin-top: 10px;
+      padding: 10px;
+      box-shadow: 0px 5px 10px #00000047;
+  
+  }
+  .dropdown-content h6{
+  color: #6C727D;
+  font-size: 18px;
+  font-weight: 600;
+  
+  }
+  .dropdown-content ul{
+    margin-top: 1rem;
+      border-top: 1px solid #b6b6b6;
+      padding-top: 5px;
+    
+  }
+  [dir="rtl"] .dropdown-content ul{
+    padding-right: 19px; 
+  }
+  [dir="ltr"] .dropdown-content ul{
+    padding-left: 19px; 
+  }
+  .dropdown-content ul li{
+    margin-bottom: 10px;
+    list-style-type: circle;
+  }
+  .dropdown-content ul li a{
+   font-size: 16px;
+   color: #6C727D;
+   font-weight: 500;
+  
+  }
+  .dropdown-content ul li:focus, .dropdown-content ul li:hover {
+      color: var(--bs-dropdown-link-hover-color);
+      background-color: var(--bs-dropdown-link-hover-bg);
+  }
+      </style>
 </head>
 <body>
      <!-------------------------start-loading-pag------------------------->
@@ -100,7 +181,22 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active"></div>
+              <div class="img-slider">
+                <img src="./assets/img/hadeer-top.png" class="d-block w-100" alt="slider">
+                <div class="overlay"></div>
+              </div>
+              
+              <div class="carousel-caption  d-md-block">
+                <h5>رايتو</h5>
+                <p class="pt-md-5 pt-1">للبرمجيات وتخطيط الموارد</p>
+                <div class="mt-md-5 mt-1">
+                  <a href="#" class="p-3 px-4 button-stert button-mor"> عروض اليوم الوطنى</a>
+  
+                 </div>
+              </div>
+            </div>
+            <div class="carousel-item">
               <div class="img-slider">
                 <img src="./assets/img/sliderb.png" class="d-block w-100" alt="slider">
                 <div class="overlay"></div>
@@ -956,7 +1052,7 @@
           </div>
         </div>
       </footer>
-      <div class="position-fixed component-whatsapp">
+      <!-- <div class="position-fixed component-whatsapp">
           <button class="btn  btn-my"onclick="myFunction()" id="myDIV">
           <img src="./assets/img/customer-service.png" alt="customer-service">
           
@@ -1027,8 +1123,32 @@
               </div>
             </div>
           </div>
-       </div>
-       
+       </div> -->
+        <!--price-hadder-->
+        <div class="compoent-price-hadder">
+          <div class="back">
+               <div class="dropdown">
+    
+                    <button class="btn btn-secondary btn-btn  dropbtn" type="button" onclick="myFunction()" id="myDIV" title="طلب عرض سعر" >
+                         <span class="title-botton">  <i class="fa-solid fa-tags"></i>  </span>
+                         
+                    </button>
+                   
+               </div>
+               <div  id="myDropdown" class="dropdown-content dropdown-menu  col-lg-3 col-md-6">
+                    <h6>طلب عرض سعر</h6>
+                    <ul>
+                        <li>
+                          <a href="#" title="">محطات الوقود</a>
+                        </li>
+                        <li>
+                          <a href="#" title=""> انظمة ERP</a>
+                        </li>
+                    </ul>
+               </div>
+          </div>
+          
+        </div>
        <!--advertisements-->
      <script src="./assets/js/jquery.js"></script>
      <script src="assets/js/owl.carousel.min.js"></script>

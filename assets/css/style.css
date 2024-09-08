@@ -1224,7 +1224,7 @@ color: var(--color-hover);
     .defintion-abver p {
 line-height: 40px;
     }
-    .p-decerption {
+    .p-decerption-p {
     
         line-height: 42px;
 
@@ -1294,3 +1294,8 @@ height: 270px;
     }
     
 }
+@media (max-width:1500px) {
+    .p-decerption-p{
+      font-size: 20px;
+    }
+  }
