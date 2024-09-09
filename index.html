@@ -101,9 +101,16 @@
       color: var(--bs-dropdown-link-hover-color);
       background-color: var(--bs-dropdown-link-hover-bg);
   }
+  /*عرض اليوم الوطنى*/
   .overlay{
     background-color: #00000087;
   }
+  @media (max-width: 990px) {
+    .img-slider img {
+        object-fit: cover;
+        object-position: 14%;
+    }
+}
       </style>
 </head>
 <body>
@@ -198,7 +205,7 @@
                 <h5>رايتو</h5>
                 <p class="pt-md-5 pt-1">للبرمجيات وتخطيط الموارد</p>
                 <div class="mt-md-5 mt-1">
-                  <a href="Offers.html" class="p-3 px-4 button-stert button-mor"> عروض اليوم الوطنى</a>
+                  <button  data-bs-toggle="modal" data-bs-target="#exampleModal"class="p-3 px-4 button-stert btn button-mor"> عروض اليوم الوطنى</button>
   
                  </div>
               </div>
@@ -1157,6 +1164,50 @@
           </div>
           
         </div>
+        <!--عرض اليوم الوطنى-->
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">عروض اليوم الوطنى</h1>
+        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="form-content row mx-0">
+          <div class="mb-2 col-md-6">
+            <label for="exampleInput" class="form-label"> اسم الشركة<span>*</span></label>
+            <input type="text" class="form-control" id="exampleInput">
+          </div>
+          <div class="mb-2 col-md-6">
+            <label for="user-input" class="form-label"> اسم الشخص<span>*</span></label>
+            <input type="text" class="form-control" id="user-input">
+          </div>
+          <div class="mb-2 col-md-6">
+            <label for="input-phone" class="form-label"> الجوال<span>*</span></label>
+            <input type="phone" class="form-control" id="input-phone">
+          </div>
+          <div class="mb-2 col-md-6">
+            <label for="exampleInputEmail1" class="form-label">البريد الالكتروني <span>*</span></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+         
+          
+          <div class="mb-2">
+            <label for="exampleInput" class="form-label">  الملاحظات<span>*</span></label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" rows="3"></textarea>
+
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primar  px-4 pt-2 pb-2">سجل الان</button>
+
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
        <!--advertisements-->
      <script src="./assets/js/jquery.js"></script>
      <script src="assets/js/owl.carousel.min.js"></script>
