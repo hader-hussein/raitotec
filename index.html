@@ -111,6 +111,23 @@
         object-position: 14%;
     }
 }
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-item video{
+    width: 100%;
+}
+@media (max-width:900px) {
+  .carousel-item video {
+    height: 100vh;
+  }
+  
+}
       </style>
 </head>
 <body>
@@ -190,12 +207,23 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
           </div>
           <div class="carousel-inner">
-                      <!--عروض اليوم الوطنى-->
+                                  <!--عروض اليوم الوطنى-->
 
             <div class="carousel-item active">
+              <div class="fullscreen-video-wrap">
+                <video  muted loop autoplay>
+                  <source src="./assets/img/video/final 4.mp4" type="video/mp4">
+                </video>
+              </div>
+              
+             
+            </div>
+
+            <div class="carousel-item">
               <div class="img-slider">
                 <img src="./assets/img/hadeer-top.jpg" class="d-block w-100" alt="slider">
                 <div class="overlay"></div>
