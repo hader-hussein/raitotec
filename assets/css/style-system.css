@@ -5,8 +5,12 @@
  .about-item-best .title-title {
      font-size: 17px;
  }
+ .title-title {
+   
+    font-size: 26px;
+ }
  .p-decerption {
-     font-size: 16px;
+     font-size: 15px;
      line-height: 26px;
      font-weight: 400;
      color: var(--color-primary);
@@ -17,4 +21,13 @@
     font-weight: 600;
     line-height: 40px;
     color: var(--color-hover);
+}
+.p-decerption p ,.about-item-best .p-decerption{
+    color: #6c727dc9;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* استهداف الصور في العناصر الزوجية */
+.Advantages .row:nth-child(even) {
+    flex-direction: row-reverse;
 }
