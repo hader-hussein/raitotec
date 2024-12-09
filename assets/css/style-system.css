@@ -31,3 +31,8 @@
 .Advantages .row:nth-child(even) {
     flex-direction: row-reverse;
 }
+.title-asset{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}

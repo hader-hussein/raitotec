@@ -19,8 +19,9 @@
      <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
-     <link href="./assets/css/style.css" rel="stylesheet">
+     <link href="./assets/css/style.css" rel="stylesheet"  media="print" onload="this.media='all'">
      <link href="./assets/css/style-en.css" rel="stylesheet">
+     <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
      <style>
       .compoent-price-hadder {
       position: fixed;
@@ -216,30 +217,30 @@
           <div class="carousel-inner">
           <!-- -11-9-2024-->
 
-            <div class="carousel-item active">
+            <!-- <div class="carousel-item active">
               <div class="fullscreen-video-wrap">
                 <video  muted loop autoplay playsinline>
                   <source src="./assets/img/video/final 4.mp4" type="video/mp4">
                 </video>
-                <!--12-9-2024-->
+               
                 <div class="carousel-caption  d-md-block text-start">
                   <div class="mt-md-5 mt-1">
                     <button  data-bs-toggle="modal" data-bs-target="#exampleModal"class="p-3 px-4 button-stert btn button-mor"> عروض اليوم الوطنى</button>
     
                    </div>
                 </div>
-                                <!--12-9-2024-->
+                               
 
               </div>
               
              
-            </div>
+            </div> -->
                       <!-- -11-9-2024-->
 
 
             <div class="carousel-item">
               <div class="img-slider">
-                <img src="./assets/img/hadeer-top.jpg" class="d-block w-100" alt="slider">
+                <img src="./assets/img/hadeer-top.jpg" class="d-block w-100" alt="slider" loading="lazy">
                 <div class="overlay"></div>
               </div>
               
@@ -1251,10 +1252,10 @@
   </div>
 </div>
        <!--advertisements-->
-     <script src="./assets/js/jquery.js"></script>
-     <script src="assets/js/owl.carousel.min.js"></script>
-     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script src="./assets/js/loade.js"></script>
+     <script src="./assets/js/jquery.js"async defer></script>
+     <script src="assets/js/owl.carousel.min.js"async defer></script>
+     <script src="./assets/js/bootstrap.bundle.min.js"async defer></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"async defer></script>
+     <script src="./assets/js/loade.js"async defer></script>
      </body>
 </html>
