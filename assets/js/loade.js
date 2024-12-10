@@ -46,8 +46,15 @@ $(document).ready(function(){
             dots:true
           },
         }
+    
       }
     );
+    // تخصيص الأزرار لتحسين إمكانية الوصول
+$(".owl-prev, .owl-next").each(function () {
+  $(this)
+    .removeAttr("role") // إزالة الخاصية role غير الصحيحة
+    .attr("aria-label", $(this).hasClass("owl-prev") ? "السابق" : "التالي"); // إضافة aria-label واضح
+});
    });
  
 // ******************VIDEO*****************************
