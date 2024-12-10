@@ -1259,5 +1259,50 @@
      <script src="./assets/js/bootstrap.bundle.min.js" async></script>
      <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
      <script src="./assets/js/loade.js" ></script>
+     <script>
+      class LargestContentfulPaint extends Audit {
+      /**
+   * @return {LH.Audit.Meta}
+   */
+  static get meta() {
+    return {
+      id: 'largest-contentful-paint',
+      title: str_(i18n.UIStrings.largestContentfulPaintMetric),
+      description: str_(UIStrings.description),
+      scoreDisplayMode: Audit.SCORING_MODES.NUMERIC,
+      supportedModes: ['navigation'],
+      requiredArtifacts: ['HostUserAgent', 'traces', 'devtoolsLogs', 'GatherContext', 'URL'],
+    };
+  }
+      static get defaultOptions() {
+    return {
+      mobile: {
+        // 25th and 13th percentiles HTTPArchive -> median and p10 points.
+        // https://bigquery.cloud.google.com/table/httparchive:lighthouse.2020_02_01_mobile?pli=1
+        // https://web.dev/articles/lcp#what_is_a_good_lcp_score
+        // see https://www.desmos.com/calculator/1etesp32kt
+        scoring: {
+          p10: 2500,
+          median: 4000,
+        },
+      },
+      desktop: {
+        // 25th and 5th percentiles HTTPArchive -> median and p10 points.
+        // SELECT
+        //   APPROX_QUANTILES(lcpValue, 100)[OFFSET(5)] AS p05_lcp,
+        //   APPROX_QUANTILES(lcpValue, 100)[OFFSET(25)] AS p25_lcp
+        // FROM (
+        //   SELECT CAST(JSON_EXTRACT_SCALAR(payload, "$['_chromeUserTiming.LargestContentfulPaint']") AS NUMERIC) AS lcpValue
+        //   FROM `httparchive.pages.2020_04_01_desktop`
+        // )
+        scoring: {
+          p10: 1200,
+          median: 2400,
+        },
+      },
+    };
+  }
+}
+     </script>
      </body>
 </html>
