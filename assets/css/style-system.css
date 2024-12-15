@@ -36,3 +36,20 @@
     font-size: 16px;
     font-weight: bold;
 }
+.component-asset{
+    position: relative;
+    
+}
+.pattern-center{
+    top: 56%;
+}
+.pattern{
+    position: absolute;
+    opacity: 0.10;
+}
+.pattern img{
+    width: 100%;
+}
+.pattern-bootom{
+    bottom: -120px;
+}
