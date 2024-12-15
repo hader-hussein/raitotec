@@ -51,5 +51,9 @@
     width: 100%;
 }
 .pattern-bootom{
-    bottom: -183px;
+    bottom: -235px;
+    left:0px;
+}
+.pattern-top{
+    left:0px
 }
