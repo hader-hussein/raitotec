@@ -26,6 +26,7 @@
   </noscript>
      <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet" >
      <link href="./assets/css/style.css" rel="stylesheet" >
+     <link href="./assets/css/style-system.css" rel="stylesheet"><!--لينك خاص بالصفحة-->
      <link href="./assets/css/style-en.css" rel="stylesheet">
    
      <style>
@@ -196,15 +197,24 @@
                <li class="nav-item">
                     <a class="nav-link" href="Blog.html">المدونة</a>
                   </li>
-                <li class="nav-item">
+                <li class="nav-item nav-login-lang">
                   <a class="nav-link" href="contact.html">تواصل معنا</a>
                 </li>
-                <li class="nav-item nav-login-lang">
+                <!-- <li class="nav-item nav-login-lang">
                     <a class="nav-link" href="login.html">  تسجيل الدخول</a>
+               </li> -->
+               <li class="nav-item lang-item">
+                    <!-- <a class="nav-link" href="#"> en</a> -->
+                    <div class="language-switcher">
+                      <button class="lang-btn btn" id="arabic-btn" title="Switch to Arabic" >
+                        <img src="./assets/Asset-system/icon/Flag-Saudi-Arabia.webp" alt="Arabic" loading="lazy" />
+                      </button>
+                      <button class="lang-btn btn" id="english-btn" title="Switch to english" style="display: none;">
+                        <img src="./assets/Asset-system/icon/united-kingdom.png" alt="English" loading="lazy" />
+                      </button>
+                    </div>
                </li>
-               <li class="nav-item nav-login-lang">
-                    <a class="nav-link" href="#"> en</a>
-               </li>
+              
               </ul>
              
             </div>
@@ -212,117 +222,50 @@
         </nav>
      <!--end-nav-->
      <!--carousel-->
-     <div id="carouselExampleCaptions" class="carousel slide corousel-index">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+     <div class="corousel-index-hadeer">
+        
+              <div class="row mx-0 row-cols-md-2 g-2 row-cols-1 align-items-center justify-content-center h-100">
 
-          </div>
-          <div class="carousel-inner">
-          <!-- -11-9-2024-->
+                <div class="col carousel-caption-left">
+                  <h5>نظام ERP شامل، تخصيص مرن، دعم فني مستمر</h5>
+                  <p class="pt-md-4 pt-1">  
+                    برنامج رايتو ERP هو الحل الأمثل الذي يلبي احتياجات إدارة أعمالك، تم تطويره باستخدام أحدث التقنيات المتقدمة لضمان السرعة والدقة والأمان، فريق دعم البرنامج يؤمن بمبدأ التطور المستمر كمفتاح للنجاح منذ بداية تأسيسه!
+                  </p>
+                  <div class="mt-4">
+                    <a href="contact.html" class="p-2 px-3 button-stert button-mor" title="نسخة تجربية">   نسخة تجربية</a>
+                    <a href="https://wa.me/966538499438" class="img-whatsapp px-2" title="تواصل واتساب"> 
+                         <img src="./assets/Asset-system/icon/whatsapp.png" alt="whatsapp" loading="lazy">
+                    </a>
 
-            <!-- <div class="carousel-item active">
-              <div class="fullscreen-video-wrap">
-                <video  muted loop autoplay playsinline>
-                  <source src="./assets/img/video/final 4.mp4" type="video/mp4">
-                </video>
-               
-                <div class="carousel-caption  d-md-block text-start">
-                  <div class="mt-md-5 mt-1">
-                    <button  data-bs-toggle="modal" data-bs-target="#exampleModal"class="p-3 px-4 button-stert btn button-mor"> عروض اليوم الوطنى</button>
-    
-                   </div>
+                  </div>
                 </div>
-                               
+                <div class="col img-slider-carousel">
+                  <img src="./assets/Asset-system/سلايدر الموقع/مقاس 2 png.png" class="d-block w-100" alt="slider" loading="lazy">
+                  
+                </div>
+              </div>
 
-              </div>
-              
-             
-            </div> -->
-                      <!-- -11-9-2024-->
-
-
-            <div class="carousel-item active">
-              <div class="img-slider">
-                <img src="./assets/img/1.webp" class="d-block w-100" alt="slider" loading="lazy">
-                <div class="overlay"></div>
-              </div>
-              
-              <div class="carousel-caption  d-md-block">
-                <h5>رايتو</h5>
-                <p class="pt-md-5 pt-1">للبرمجيات وتخطيط الموارد</p>
-                <div class="mt-md-5 mt-1">
-                  <button  data-bs-toggle="modal" data-bs-target="#exampleModal"class="p-3 px-4 button-stert btn button-mor"> عروض اليوم الوطنى</button>
-  
-                 </div>
-              </div>
-            </div>
-            <!---->
-            <div class="carousel-item">
-              <div class="img-slider">
-                <img src="./assets/img/sliderb.png" class="d-block w-100" alt="slider">
-                <div class="overlay"></div>
-              </div>
-              
-              <div class="carousel-caption  d-md-block">
-                <h5>رايتو</h5>
-                <p class="pt-md-5 pt-1">للبرمجيات وتخطيط الموارد</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="img-slider">
-                <img src="./assets/img/slider-3.png" class="d-block w-100" alt="slider">
-                <div class="overlay"></div>
-              </div>
-               
-              <div class="carousel-caption d- d-md-block">
-                <h5>نظام ERP متطور ومتكامل</h5>
-                <p class="pt-md-5 pt-1">برنامج رايتو ERP هو الحل الأمثل الذي يلبي احتياجات إدارة أعمالك، تم تطويره باستخدام أحدث التقنيات المتقدمة لضمان السرعة والدقة والأمان، فريق دعم البرنامج يؤمن بمبدأ التطور المستمر كمفتاح للنجاح منذ بداية تأسيسه!
-               </p>
-               <div class="mt-md-5 mt-1">
-                <a href="contact.html" class="p-3 px-4 button-stert button-mor">ابدا الاستخدام الان</a>
-
-               </div>
-              </div>
-            </div>
-          
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+         
         
      </div>
      <!--end-carousel-->
      <!--about-->
      <section class="component-about pt-5 pb-5">
-      <div class="container">
-         <div class="row row-cols-md-2 row-cols-1 mx-0 g-3">
-             <div class="col pt-2" data-aos="fade-up"data-aos-delay="50">
-               <h2 class="title-title">نبذة عن الشركة </h2>
-               <p class="pt-3 p-decerption">
-                شركة رايتو للبرمجيات هي شركة تقنية رائدة تقدم منتجات وخدمات عالية الجودة لعملائها في جميع أنحاء العالم، تلتزم الشركة بالابتكار والتميز التقني، وتهدف لمساعدة عملائها على تحقيق أهدافهم، كما تمتلك الشركة فريقًا موهوبًا من المتخصصين في تطوير البرمجيات وتصميم الواجهات وإدارة المشاريع، وتستخدم الشركة أحدث التقنيات والأدوات لتطوير حلول برمجية مبتكرة ومخصصة تلبي متطلبات السوق الحالية والمستقبلية.
-               </p>
-             </div>
+       
              <div class="col component-video" data-aos="fade-up"data-aos-delay="50">
               <div class="video-date">
                 <div class="div-button">
                     <div id="myBtn"></div>
                 </div>
-                <video  loop="" id="myVideo" poster="assets/img/advertisements.png" style="object-fit:cover;">
-                    <source src="./assets/img/video/vv.mp4" type="video/mp4">
+                <video  loop="" id="myVideo" poster="https://raitotec.com/public/assets_site/img/video_cover.webp" style="object-fit:cover;" alt="About Us">
+                    <source src="https://raitotec.com/public/attachments/aboutUs/1702904407988.mp4" type="video/mp4">
+                    <track kind="captions" src="https://raitotec.com/public/attachments/aboutUs/captions.vtt" srclang="ar" label="العربية" default="">
                 </video>
             
             </div>   
              </div>
-         </div>
-      </div>
+         
+     
      </section>
      <!--end-about-->
      <!--services-->
@@ -336,7 +279,54 @@
                 </p>
              </div>
           </div>
-          <div class="content-services row mx-0 row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 pt-5">
+          <div class="tree-container pt-5">
+            <div class="tree">
+              <!-- العنصر 1 -->
+              <div class="branch branch-right" data-info="   نقدم لكم برامج المحاسبة لكافة المنشأت، ويتم من خلال هذه البرامج إدارة المدفوعات - القيـود اليوميـة - الايداعات - التحويلات البنكية بيـن الحسابات- تسوية الحسابات البنكية الشــركات وغيرها.">
+                <div class="circle">1</div>
+                <p>  برنامج المحاسبة العامة</p>
+              </div>
+        
+              <!-- العنصر 2 -->
+              <div class="branch branch-left" data-info="أصول وخصوم وإيرادات ومصروفات">
+                <div class="circle">2</div>
+                <p> برنامج إدارة المخزون</p>
+              </div>
+        
+              <!-- العنصر 3 -->
+              <div class="branch branch-right" data-info="فهرسة التعديل أو إنشاء حسابات جديدة بسهولة">
+                <div class="circle">3</div>
+                <p> برنامج إدارة المناديب</p>
+              </div>
+        
+              <!-- العنصر 4 -->
+              <div class="branch branch-left" data-info="استعراض تقرير شامل وتحليل كامل ودقيق">
+                <div class="circle">4</div>
+                <p> برنامج إدارة الموارد البشرية</p>
+              </div>
+        
+              <!-- العنصر 5 -->
+              <div class="branch branch-right" data-info="دليل حسابي متكامل للمتابعة وإتمام العمليات بسهولة">
+                <div class="circle">5</div>
+                <p> برامج إدارة المبيعات</p>
+              </div>
+               <!-- العنصر 6 -->
+               <div class="branch branch-left" data-info="استعراض تقرير شامل وتحليل كامل ودقيق">
+                <div class="circle">6</div>
+                <p>  برنامج إدارة الصيانة</p>
+              </div>
+              <!-- العنصر 5 -->
+              <div class="branch branch-right" data-info="دليل حسابي متكامل للمتابعة وإتمام العمليات بسهولة">
+                <div class="circle">7</div>
+                <p>   برامج أخرى</p>
+              </div>
+            </div>
+          </div>
+        
+          <div id="tooltip" class="tooltip"></div>
+          
+          
+          <!-- <div class="content-services row mx-0 row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 pt-5">
             <div class="col d-flex">
                <div class="card"data-aos-delay="30"data-aos="fade-up">
                   <img class="img-fluid" src="./assets/img/management system.webp"alt="Services">
@@ -356,7 +346,7 @@
                   </div>
                </div>
             </div>
-            <!---->
+           
             <div class="col d-flex">
               <div class="card"data-aos-delay="30"data-aos="fade-up">
                  <img class="img-fluid" src="./assets/img/Stores.webp"alt="Services">
@@ -373,7 +363,7 @@
                  </div>
               </div>
            </div>
-           <!---->
+         
            <div class="col d-flex">
             <div class="card"data-aos-delay="30"data-aos="fade-up">
                <img class="img-fluid" src="./assets/img/delegates.webp"alt="Services">
@@ -389,11 +379,7 @@
                </div>
             </div>
            </div>
-           <!---->
-         
-           <!---->
            
-           <!---->
            <div class="col d-flex">
             <div class="card"data-aos-delay="30"data-aos="fade-up">
                <img class="img-fluid" src="./assets/img/hre.webp"alt="Services">
@@ -409,7 +395,7 @@
                </div>
             </div>
            </div>
-           <!---->
+          
            <div class="col d-flex">
             <div class="card"data-aos-delay="30"data-aos="fade-up">
                <img class="img-fluid" src="./assets/img/Sale-purchases.webp"alt="Services">
@@ -425,7 +411,7 @@
                </div>
             </div>
            </div>
-           <!---->
+           
            <div class="col d-flex">
             <div class="card"data-aos-delay="30"data-aos="fade-up">
                <img class="img-fluid" src="./assets/img/our-p.png"alt="Services">
@@ -442,7 +428,7 @@
                </div>
             </div>
            </div>
-          </div>
+          </div> -->
         </div>
       </section>
      <!--ens-services-->
@@ -1192,6 +1178,7 @@
      <script src="./assets/js/bootstrap.bundle.min.js" async></script>
      <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
      <script src="./assets/js/loade.js" ></script>
+     <script src="./assets/js/chang-langth.js" ></script>
      <script>
       class LargestContentfulPaint extends Audit {
       /**
@@ -1236,6 +1223,7 @@
     };
   }
 }
+
      </script>
      </body>
 </html>

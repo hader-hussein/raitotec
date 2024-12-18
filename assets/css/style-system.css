@@ -13,7 +13,7 @@
      font-size: 15px;
      line-height: 26px;
      font-weight: 400;
-     color: var(--color-primary);
+     color: #605f5f;
      margin-bottom: 0px;
  }
  .defintion-abver h6 {
@@ -23,7 +23,7 @@
     color: var(--color-hover);
 }
 .p-decerption p ,.about-item-best .p-decerption{
-    color: #6c727dc9;
+    color: #605f5f;
     font-weight: 400;
     font-size: 14px;
 }
@@ -57,3 +57,201 @@
 .pattern-top{
     left:0px
 }
+/**langeth*/
+.lang-btn img {
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .navber-index .navbar-nav .lang-item:hover {
+    background: transparent !important;
+    border-radius: 8px;
+    border: 1px solid #414040;
+   
+}
+.navber-index .navbar-nav .nav-link {
+    color: black;
+
+}
+.navber-index .navbar-nav .nav-item:hover .nav-link,
+.navber-index .navbar-nav .nav-login-lang .nav-link,
+.navber-index.scrolled .navbar-nav .nav-link 
+{
+
+    color: #fff !important;
+}
+
+.navber-index .navbar-nav .nav-login-lang{
+    background: linear-gradient(100deg, #0B555E, #428315cc);
+    border-radius: 8px;
+   color: #fff !important;
+}
+.corousel-index-hadeer {
+    height: 100vh;
+}
+.img-slider-carousel{
+    height: auto;
+}
+.corousel-index-hadeer .carousel-caption-left {
+    padding-right: 11%;
+}
+
+.corousel-index-hadeer .carousel-caption-left h5 {
+color: black;
+font-size: 33px;
+    font-weight: bold;
+}
+.corousel-index-hadeer .carousel-caption-left p {
+    font-size: 16px;
+    color: #605f5f;
+    line-height: 29px;
+    font-weight: 400;
+}
+.img-whatsapp img{
+    width: 48px;
+    height: 48px;
+}
+.component-video video {
+    width: 100%;
+    height: 600px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 16px #605f5f66;
+}
+.component-reviews {
+
+position: relative;
+}
+/*خدمتنا*/
+
+  
+  /* تصميم الفروع */
+  
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .tree-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+  
+  /* الخط الأساسي للشجرة */
+  .tree {
+    position: relative;
+    width: 4px;
+    height: 550px;
+    background: linear-gradient(100deg, #0B555E, #428315cc);;
+    margin: 0 auto;
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* محاذاة المحتوى في المنتصف */
+  }
+  
+  /* تصميم الفروع */
+  .branch {
+    position: absolute;
+    width: 202px;
+    background-color: #fff;
+    border: 2px solid   #428315cc;
+    border-radius: 30px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  .tree .branch:nth-child(even){
+    border: 2px solid   #0B555E;
+  }
+
+.circle {
+  position: absolute; /* تثبيت الدائرة */
+  top: 65%; /* محاذاة رأسياً في منتصف الفرع */
+  transform: translateY(-50%); /* لضمان المركزية العمودية */
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(100deg, #0B555E, #428315cc);
+  color: #fff;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.tree .branch:nth-child(even) .circle {
+  right: -17px; /* وضع الدائرة في بداية الفرع الأيسر */
+}
+
+.tree .branch:nth-child(odd) .circle {
+  left: -17px; /* وضع الدائرة في بداية الفرع الأيمن */
+}
+
+/* الخطوط المتصلة بين الفروع والعمود */
+.branch::before {
+  content: '';
+  position: absolute;
+  top: 90%;
+    width: 31px;
+
+  height: 2px;
+  background: linear-gradient(100deg, #0B555E, #428315cc);
+  
+}
+
+.branch-right::before {
+  left: -27px;
+  transform: rotate(317deg)/* جعل العنصر مائلًا */
+}
+
+.branch-left::before {
+  right: -27px;
+  transform: rotate(45deg); /* جعل العنصر مائلًا */
+}
+  .branch p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+ 
+  
+  .branch:hover {
+    background-color: #a4a5a7;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* تحديد أماكن الفروع */
+ .tree .branch:nth-child(even) {
+    left: -224px;
+  }
+  
+  .tree .branch:nth-child(odd) {
+    right: -224px;
+  }
+  
+  .branch:nth-child(1) { top: 0; }
+  .branch:nth-child(2) { top: 80px; }
+  .branch:nth-child(3) { top: 160px; }
+  .branch:nth-child(4) { top: 240px; }
+  .branch:nth-child(5) { top: 320px; }
+  .branch:nth-child(6) { top: 377px; }
+  .branch:nth-child(7) { top: 454px; }
+  /* Tooltip */
+  .tooltip {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    padding: 8px;
+    font-size: 12px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  
