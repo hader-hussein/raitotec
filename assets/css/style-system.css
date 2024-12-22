@@ -322,5 +322,21 @@ position: relative;
   background: #e46020;
 }
 
-
-
+/*اسعارنا*/
+.component-hadeer {
+ 
+  border-bottom: 1px solid #cdcdcd;
+  padding: 25px 0;
+  height: 241px;
+  display: flex
+;
+  align-items: center;
+  background: #ffffff;
+}
+.page-title {
+  color: #000000;
+  font-size: 30px;
+  margin-top: 40px;
+  text-transform: capitalize;
+  text-align: center;
+}

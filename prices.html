@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style-system.css" rel="stylesheet"><!--لينك خاص بالتصميم الجديد-->
+
     <link href="./assets/css/style-en.css" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +32,7 @@
       </div>
       <!---------------------------end-loading-pag------------------------->
      <!--nav-->
-     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index ">
+     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index">
       <div class="container">
         <a class="navbar-brand" href="index.html">
            <img src="./assets/img/logoar.webp" alt="logo">
@@ -47,45 +49,55 @@
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
             
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Services.html">
+              الخدمات
+            </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
+                <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
+              <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
+              </ul>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Services.html">
-                الخدمات
+              <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
+                البرامج
               </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
-                  <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
-                  <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
-                  البرامج
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Programs.html"> برنامج المحاسبة</a></li>
-                  <li><a class="dropdown-item" href="Programs.html">  برنامج ادارة المخازن </a></li>
-                  <li><a class="dropdown-item" href="Programs.html">  برنامج ادارة المناديب  </a></li>
-                  <li><a class="dropdown-item" href="Programs.html">  برنامج ادارة الموارد البشرية  </a></li>
-                  <li><a class="dropdown-item" href="Programs.html">  برنامج   نقاط البيعpos  </a></li>
-                  <li><a class="dropdown-item" href="Programs.html">     برامج اخرى  </a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
+                <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
+                <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
+                <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة الموارد البشرية  </a></li>
+                <li><a class="dropdown-item" href="Programs-pos.html">  برنامج   نقاط البيعpos  </a></li>
+                <li><a class="dropdown-item" href="Programs-Other.html">     برامج اخرى  </a></li>
+                <li><a class="dropdown-item" href="Programs-Asset-system-tow.html">    برنامج ادارة الاصول </a></li>
 
-                </ul>
-              </li>
+              </ul>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="Our-business.html">نماذج اعمالنا</a>
+                <a class="nav-link" href="prices.html"> اسعارنا</a>
            </li>
            <li class="nav-item">
                 <a class="nav-link" href="Blog.html">المدونة</a>
               </li>
-            <li class="nav-item">
+            <li class="nav-item nav-login-lang">
               <a class="nav-link" href="contact.html">تواصل معنا</a>
             </li>
-            <li class="nav-item nav-login-lang">
+            <!-- <li class="nav-item nav-login-lang">
                 <a class="nav-link" href="login.html">  تسجيل الدخول</a>
+           </li> -->
+           <li class="nav-item lang-item">
+                <!-- <a class="nav-link" href="#"> en</a> -->
+                <div class="language-switcher">
+                  <button class="lang-btn btn" id="arabic-btn" title="Switch to Arabic" >
+                    <img src="./assets/Asset-system/icon/Flag-Saudi-Arabia.webp" alt="Arabic" loading="lazy" />
+                  </button>
+                  <button class="lang-btn btn" id="english-btn" title="Switch to english" style="display: none;">
+                    <img src="./assets/Asset-system/icon/united-kingdom.png" alt="English" loading="lazy" />
+                  </button>
+                </div>
            </li>
-           <li class="nav-item nav-login-lang">
-                <a class="nav-link" href="#"> en</a>
-           </li>
+          
           </ul>
          
         </div>
