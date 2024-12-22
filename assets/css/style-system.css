@@ -10,7 +10,7 @@
     font-size: 26px;
  }
  .p-decerption {
-     font-size: 15px;
+     font-size: 16px;
      line-height: 26px;
      font-weight: 400;
      color: #605f5f;
@@ -97,7 +97,7 @@
     padding-right: 11%;
 }
 
-.corousel-index-hadeer .carousel-caption-left h5 {
+.corousel-index-hadeer .carousel-caption-left .title-title-caption {
 color: black;
 font-size: 33px;
     font-weight: bold;
@@ -122,136 +122,205 @@ font-size: 33px;
 
 position: relative;
 }
-/*خدمتنا*/
 
-  
-  /* تصميم الفروع */
-  
-.highlight {
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .tree-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-  
-  }
-  
-  /* الخط الأساسي للشجرة */
-  .tree {
-    position: relative;
-    width: 4px;
-    height: 550px;
-    background: linear-gradient(100deg, #0B555E, #428315cc);;
-    margin: 0 auto;
-    display: flex;
-  flex-direction: column;
-  align-items: center; /* محاذاة المحتوى في المنتصف */
-  }
-  
-  /* تصميم الفروع */
-  .branch {
-    position: absolute;
-    width: 202px;
-    background-color: #fff;
-    border: 2px solid   #428315cc;
-    border-radius: 30px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    padding: 10px;
-    transition: all 0.3s ease;
-  }
-  .tree .branch:nth-child(even){
-    border: 2px solid   #0B555E;
-  }
 
-.circle {
-  position: absolute; /* تثبيت الدائرة */
-  top: 65%; /* محاذاة رأسياً في منتصف الفرع */
-  transform: translateY(-50%); /* لضمان المركزية العمودية */
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-  background: linear-gradient(100deg, #0B555E, #428315cc);
-  color: #fff;
-  font-weight: bold;
-  z-index: 10;
-}
-
-.tree .branch:nth-child(even) .circle {
-  right: -17px; /* وضع الدائرة في بداية الفرع الأيسر */
-}
-
-.tree .branch:nth-child(odd) .circle {
-  left: -17px; /* وضع الدائرة في بداية الفرع الأيمن */
-}
-
-/* الخطوط المتصلة بين الفروع والعمود */
-.branch::before {
-  content: '';
-  position: absolute;
-  top: 90%;
-    width: 31px;
-
-  height: 2px;
-  background: linear-gradient(100deg, #0B555E, #428315cc);
-  
-}
-
-.branch-right::before {
-  left: -27px;
-  transform: rotate(317deg)/* جعل العنصر مائلًا */
-}
-
-.branch-left::before {
-  right: -27px;
-  transform: rotate(45deg); /* جعل العنصر مائلًا */
-}
-  .branch p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #333;
-  }
- 
-  
-  .branch:hover {
-    background-color: #a4a5a7;
+  .footer-nav li a, .contact-content a, .footer-copyright p,.p-footer {
     color: #fff;
-    transform: scale(1.05);
+}
+.title-title {
+  color: #000;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 35px;
+} 
+
+
+/**/
+@keyframes rotateMain {
+  from {
+    transform: rotate(0deg);
   }
-  
-  /* تحديد أماكن الفروع */
- .tree .branch:nth-child(even) {
-    left: -224px;
+  to {
+    transform: rotate(360deg);
   }
-  
-  .tree .branch:nth-child(odd) {
-    right: -224px;
+}
+
+@keyframes rotateInner {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .branch:nth-child(1) { top: 0; }
-  .branch:nth-child(2) { top: 80px; }
-  .branch:nth-child(3) { top: 160px; }
-  .branch:nth-child(4) { top: 240px; }
-  .branch:nth-child(5) { top: 320px; }
-  .branch:nth-child(6) { top: 377px; }
-  .branch:nth-child(7) { top: 454px; }
-  /* Tooltip */
-  .tooltip {
-    position: absolute;
-    display: none;
-    background-color: #fff;
-    border: 1px solid #007bff;
-    padding: 8px;
-    font-size: 12px;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+  to {
+    transform: rotate(-360deg);
   }
-  
-  
+}
+
+.centralized {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  margin: 0 auto;
+  padding-top: 120px;
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
+
+.main-container .main-circle {
+  border: 6px solid #bcbcbc;
+  border-radius: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.main-container .main-circle .inner {
+  border: 4px solid #e3e3e3;
+  border-radius: 100%;
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #616161;
+  font-size: 24px;
+  height: 100%;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+}
+
+.main-container .main-circle .inner img {
+  width: 84%;
+  border-radius: 50%;
+}
+
+.main-container .bubble-container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: transform ease-in 0.7s, opacity ease 1s;
+  transform: rotate(0deg); /* التأكد من تطبيق التدوير فقط على الفقاعة */
+}
+
+.main-container .bubble-container .pointer {
+  background: #fff;
+  border: 4px solid #bcbcbc;
+  border-radius: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: calc(-17px + 3px);
+  height: 34px;
+  top: calc(50% - 17px);
+  width: 34px;
+}
+
+.main-container .bubble-container .pointer .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 14px 7px 0;
+  border-color: transparent #bcbcbc transparent transparent;
+  position: absolute;
+  left: -15px;
+  top: 5.52px;
+}
+
+.main-container .bubble-container .pointer .inner {
+  background: #000;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 14px;
+  width: 14px;
+}
+
+.main-container .bubble-container .bubble {
+  border-radius: 100%;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  top: calc(50% - 55px);
+  left: -145px;
+  background-color: #4c67aa;
+  transform: rotate(0deg); /* التأكد من التدوير على الفقاعة فقط */
+  transition: all ease 0.8s;
+}
+
+.main-container .bubble-container .bubble .inner {
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 97px;
+  width: 97px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.main-container .bubble-container .bubble .inner h3 {
+  font-size: 16px;
+  text-align: center;
+}
+.main-container .bubble-container .bubble p {
+  position: absolute;
+  top: 100%; /* جعل النص يظهر تحت الفقاعة */
+  left: 50%; /* محاذاة النص وسطياً */
+  transform: translateX(-50%); /* تعديل المحاذاة أفقياً */
+  background-color: rgba(0, 0, 0, 0.85); /* خلفية داكنة للنص */
+  color: #fff; /* نص أبيض */
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  visibility: hidden; /* إخفاء النص بشكل افتراضي */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* تأثير الانتقال */
+  z-index: 1000; /* التأكد من أن النص يظهر فوق باقي العناصر */
+  max-width: 300px; /* تحديد عرض أقصى للنص */
+  width: 390px; /* السماح للنص بالتدفق ضمن المساحة المتاحة */
+  line-height: 1.4; /* تحديد ارتفاع السطر لزيادة التباعد بين الأسطر */
+  white-space: normal; /* السماح للنص بالانتقال إلى سطور جديدة */
+  word-wrap: break-word; /* السماح للنص بالتفاف إلى الأسطر التالية إذا كان طويلاً */
+}
+
+.main-container .bubble-container:hover .bubble p {
+  visibility: visible; /* إظهار النص عند التمرير */
+  opacity: 1; /* جعل النص مرئياً */
+}
+.main-container .bubble-container.black .bubble,
+.main-container .bubble-container.black .pointer .inner {
+  background: #505269;
+}
+
+.main-container .bubble-container.blue-dark .bubble,
+.main-container .bubble-container.blue-dark .pointer .inner {
+  background: #4c67aa;
+}
+
+.main-container .bubble-container.blue-light .bubble,
+.main-container .bubble-container.blue-light .pointer .inner {
+  background: #25ade1;
+}
+
+.main-container .bubble-container.green .bubble,
+.main-container .bubble-container.green .pointer .inner {
+  background: #8dc03f;
+}
+
+.main-container .bubble-container.orange .bubble {
+  background: #fa9128;
+}
+
+.main-container .bubble-container.orange .pointer .inner {
+  background: #fa9128;
+}
+
+.main-container .bubble-container.red .bubble,
+.main-container .bubble-container.red .pointer .inner {
+  background: #e46020;
+}
+
+
+

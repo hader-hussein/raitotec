@@ -39,25 +39,12 @@ function toggleLanguage(lang) {
   updateContentLanguage(lang);
 }
 // تحديد العناصر داخل الشجرة
-const branches = document.querySelectorAll('.branch');
-const tooltip = document.getElementById('tooltip');
-
-branches.forEach(branch => {
-  branch.addEventListener('mouseenter', (e) => {
-    const info = branch.getAttribute('data-info');
-    tooltip.textContent = info;
-    tooltip.style.display = 'block';
-    tooltip.style.top = `${e.pageY + 10}px`;
-    tooltip.style.left = `${e.pageX + 10}px`;
-  });
-
-  branch.addEventListener('mousemove', (e) => {
-    tooltip.style.top = `${e.pageY + 10}px`;
-    tooltip.style.left = `${e.pageX + 10}px`;
-  });
-
-  branch.addEventListener('mouseleave', () => {
-    tooltip.style.display = 'none';
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.item');
+  items.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add('show');
+    }, index * 300);
   });
 });
 
