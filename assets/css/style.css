@@ -716,16 +716,7 @@ display: none;
     }
 }
 /*content-us*/
-.component-hadeer{
-  
-    background-image: url(../img/advertisements.png);
-    border-bottom: 1px solid #cdcdcd;
-    padding: 25px 0;
-    height: 320px;
-    display: flex;
-    align-items: center;
-    background: #000;
-}
+
 .page-title {
     color: white;
     font-size: 30px;
@@ -971,17 +962,7 @@ display: none;
 }
 /*end-blog*/
 /*pricess*/
-.price_box_inner{
-    border: 1px solid #cbc8c8;
-    border-radius: 16px;
-    color: var(--color-primary);
-    background-color: #b3e1a570;
-}
-.price_box_inner:hover{
-    background: linear-gradient(100deg, #0B555E , #428315cc ) !important;
-    color: var(--color-hover);
-    transform: scale(1.02)
-}
+
 
 .span-price{
    

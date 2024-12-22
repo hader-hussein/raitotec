@@ -108,6 +108,11 @@ font-size: 33px;
     line-height: 29px;
     font-weight: 400;
 }
+.navber-index .collapse.show {
+    background-color: #ffffff;
+  
+    box-shadow: 0px 10px 10px #cddcda4f;
+}
 .img-whatsapp img{
     width: 48px;
     height: 48px;
@@ -137,201 +142,25 @@ position: relative;
 
 
 /**/
-@keyframes rotateMain {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateInner {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
-
-.centralized {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-container {
-  margin: 0 auto;
-  padding-top: 120px;
-  height: 550px;
-  width: 100%;
-  position: relative;
-}
-
-.main-container .main-circle {
-  border: 6px solid #bcbcbc;
-  border-radius: 100%;
-  box-sizing: border-box;
-  padding: 24px;
-  height: 300px;
-  width: 300px;
-  position: relative;
-}
-
-.main-container .main-circle .inner {
-  border: 4px solid #e3e3e3;
-  border-radius: 100%;
-  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  color: #616161;
-  font-size: 24px;
-  height: 100%;
-  line-height: 1.5;
-  text-align: center;
-  width: 100%;
-}
-
-.main-container .main-circle .inner img {
-  width: 84%;
-  border-radius: 50%;
-}
-
-.main-container .bubble-container {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  opacity: 0;
-  transition: transform ease-in 0.7s, opacity ease 1s;
-  transform: rotate(0deg); /* التأكد من تطبيق التدوير فقط على الفقاعة */
-}
-
-.main-container .bubble-container .pointer {
-  background: #fff;
-  border: 4px solid #bcbcbc;
-  border-radius: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  left: calc(-17px + 3px);
-  height: 34px;
-  top: calc(50% - 17px);
-  width: 34px;
-}
-
-.main-container .bubble-container .pointer .arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7px 14px 7px 0;
-  border-color: transparent #bcbcbc transparent transparent;
-  position: absolute;
-  left: -15px;
-  top: 5.52px;
-}
-
-.main-container .bubble-container .pointer .inner {
-  background: #000;
-  border-radius: 100%;
-  box-sizing: border-box;
-  height: 14px;
-  width: 14px;
-}
-
-.main-container .bubble-container .bubble {
-  border-radius: 100%;
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  top: calc(50% - 55px);
-  left: -145px;
-  background-color: #4c67aa;
-  transform: rotate(0deg); /* التأكد من التدوير على الفقاعة فقط */
-  transition: all ease 0.8s;
-}
-
-.main-container .bubble-container .bubble .inner {
-  background: #fff;
-  border-radius: 100%;
-  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  height: 97px;
-  width: 97px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.main-container .bubble-container .bubble .inner h3 {
-  font-size: 16px;
-  text-align: center;
-}
-.main-container .bubble-container .bubble p {
-  position: absolute;
-  top: 100%; /* جعل النص يظهر تحت الفقاعة */
-  left: 50%; /* محاذاة النص وسطياً */
-  transform: translateX(-50%); /* تعديل المحاذاة أفقياً */
-  background-color: rgba(0, 0, 0, 0.85); /* خلفية داكنة للنص */
-  color: #fff; /* نص أبيض */
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  visibility: hidden; /* إخفاء النص بشكل افتراضي */
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* تأثير الانتقال */
-  z-index: 1000; /* التأكد من أن النص يظهر فوق باقي العناصر */
-  max-width: 300px; /* تحديد عرض أقصى للنص */
-  width: 390px; /* السماح للنص بالتدفق ضمن المساحة المتاحة */
-  line-height: 1.4; /* تحديد ارتفاع السطر لزيادة التباعد بين الأسطر */
-  white-space: normal; /* السماح للنص بالانتقال إلى سطور جديدة */
-  word-wrap: break-word; /* السماح للنص بالتفاف إلى الأسطر التالية إذا كان طويلاً */
-}
-
-.main-container .bubble-container:hover .bubble p {
-  visibility: visible; /* إظهار النص عند التمرير */
-  opacity: 1; /* جعل النص مرئياً */
-}
-.main-container .bubble-container.black .bubble,
-.main-container .bubble-container.black .pointer .inner {
-  background: #505269;
-}
-
-.main-container .bubble-container.blue-dark .bubble,
-.main-container .bubble-container.blue-dark .pointer .inner {
-  background: #4c67aa;
-}
-
-.main-container .bubble-container.blue-light .bubble,
-.main-container .bubble-container.blue-light .pointer .inner {
-  background: #25ade1;
-}
-
-.main-container .bubble-container.green .bubble,
-.main-container .bubble-container.green .pointer .inner {
-  background: #8dc03f;
-}
-
-.main-container .bubble-container.orange .bubble {
-  background: #fa9128;
-}
-
-.main-container .bubble-container.orange .pointer .inner {
-  background: #fa9128;
-}
-
-.main-container .bubble-container.red .bubble,
-.main-container .bubble-container.red .pointer .inner {
-  background: #e46020;
-}
 
 /*اسعارنا*/
+
 .component-hadeer {
- 
-  border-bottom: 1px solid #cdcdcd;
+ position: relative;
   padding: 25px 0;
   height: 241px;
   display: flex
 ;
   align-items: center;
-  background: #ffffff;
+  background: linear-gradient(7deg, #0b555ee6, #4283150a);
+
+background-size: cover;
+}
+.component-hadeer img{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
 }
 .page-title {
   color: #000000;
@@ -339,4 +168,28 @@ position: relative;
   margin-top: 40px;
   text-transform: capitalize;
   text-align: center;
+}
+.price_box_inner {
+    box-shadow: 0px 0px 12px #cbc8;
+  border-radius: 16px;
+
+  background-color: #fff;
+  display: grid; 
+    align-content: flex-start;
+    grid-template-rows: 0.25fr 0.25fr 1fr;
+    transition: all 0.3s ease-in-out; /* لإضافة تأثير الانتقال */
+}
+.price_box_inner:hover {
+    box-shadow: 0px 0px 10px #aaaaaac8; /* تغيير الظل */
+    transform: translateY(-5px); /* إضافة حركة بسيطة */
+    background-color: #f5f5f54d; /* تغيير لون الخلفية */
+}
+.price-component{
+    background: linear-gradient(100deg, #0B555E, #428315cc);
+    color: #fff;
+    border-radius: 8px;
+}
+.nk-pricing-body li img{
+    width: 24px;
+    height: 24px;
 }
