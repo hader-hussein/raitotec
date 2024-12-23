@@ -120,11 +120,7 @@ font-size: 33px;
     width: 48px;
     height: 48px;
 }
-.video-date-about video{
-    width: 100%;
-  
-  
-}
+
 .component-reviews {
 
 position: relative;
@@ -174,7 +170,7 @@ background-size: cover;
 .price_box_inner {
     box-shadow: 0px 0px 12px #cbc8;
   border-radius: 16px;
-
+position: relative;
   background-color: #fff;
   display: grid; 
     align-content: flex-start;
@@ -186,9 +182,33 @@ background-size: cover;
     transform: translateY(-5px);
     background: linear-gradient(222deg, #0b555ee6, #4383156e);
     color: #fff;
+    
 }
+.component-decient{
+    position: absolute;
+    background-color: #428315;
+    padding: 10px;
+    margin: 0px 10px;
+   top:0px;
+    border-radius: 0px 0px 10px;
+   }
+   .component-decient p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+   }
+   .component-decient p span{
+    font-size: 20px;
+    font-weight: 800;
+   }
 .price_box_inner:hover .p-decerption,.price_box_inner:hover .price-component{
     color: #fff; 
+}
+.price_box_inner:hover .component-decient{
+    background-color: #fff;
+}
+.price_box_inner:hover .component-decient p{
+    color: #000;
 }
 .price_box_inner:hover li img {
     filter: brightness(0) invert(1);
@@ -329,40 +349,101 @@ width: 100%;
     color: #fff;
     border-radius: 10px;
   }
-  .image-box {
-    position: relative;
-}
-.image-box .image {
-    position: relative;
-    display: block;
-    border-radius: 30px 30px 0 0;
-   
-    max-width: 470px;
-    transition: all .5s ease;
-}
-@media (max-width:600px) {
-    .image-box .image {
-margin: 0px;
-    }
-}
-.image-box .image img{
-width: 100%;
-}
-.image-box .text {
-    position: absolute;
-    left: 0;
-    bottom: 26px;
-    width: 200px;
-    padding: 30px 15px 29px;
-    box-shadow: 0 20px 60px 10px rgba(0, 0, 0, .1);
-    border-radius: 20px;
-    z-index: 1;
-    background: linear-gradient(100deg, #0B555E, #428315cc);
-    color: #fff;
-}
-.btn-modal {
-    background-color: #fff;
-    border: 0px;
-}
+  
+  .video-box{
+    padding: 10px;
+    box-shadow: 0px 2px 6px #dbdade inset;
+  border-radius: 16px;
+  }
+  .video-box video{
+    width: 100%;
+    height: 335px;
+    border-radius: 8px;
 
+  }
+  /****/
+  
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .step {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
    
+    padding: 20px;
+  
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  .icon-container{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .icon-container img {
+    width: 60px;
+    height: 60px;
+   
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+
+  /* Odd elements move up */
+  .steps-container .step:nth-child(odd) {
+    transform: translateY(-20px);
+  }
+  
+  /* Even elements move down */
+  .steps-container .step:nth-child(even) {
+    transform: translateY(20px);
+  }
+  /* Color for each circle */
+.steps-container .step:nth-child(1) .icon-container {
+    background-color: #fce08d; /* Coral */
+  }
+  
+  .steps-container .step:nth-child(2) .icon-container {
+    background-color: #17aabd; /* Cornflower Blue */
+  }
+  
+  .steps-container .step:nth-child(3) .icon-container {
+    background-color: #486283; /* Amber */
+  }
+  
+  .steps-container .step:nth-child(4) .icon-container {
+    background-color: #6dd12a; /* Lime Green */
+  }
+  /* Line between steps */
+  .steps-container .step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: 87%;
+    width: 86%;
+    height: 2px;
+    background: transparent;
+    border-top: 2px dashed #ccc;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, transparent 0%, #ccc 50%, transparent 100%);
+    transform: translateY(-50%) rotate(346deg); /* Adjust rotation to create curve effect */
+    z-index: -1;
+  }
+ 

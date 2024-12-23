@@ -144,8 +144,8 @@
      <!--about-->
      <section class="component-about pt-5 pb-5">
       <div class="container">
-        <div class="row  mx-0">
-          <div class="col-lg-6 col-md-12 col-sm-12 content-column mt-4">
+        <div class="row g-4 row-cols-lg-2 row-cols-md-2 row-cols-1  mx-0">
+          <div class="col content-column mt-4">
             <h5 class="mb-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">من نحن</h5>
             <h2 class="mb-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
               نبذة عن الشركة
@@ -158,53 +158,74 @@
             
             <div class="btn-box mb-lg-0 mb-4 aos-init pt-4" data-aos="fade-up" data-aos-delay="300"><a class="p-2 px-3 button-stert button-mor" target="_blank" href="about.html">قراة المزيد</a></div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 image-column aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-            <div class="image-box">
-              <figure class="image">
-                <img alt="about-us" src="./assets/Asset-system/icon/01.webp" loading="lazy" width="470" height="500">
-              </figure>
-              <div class="text text-center">
-                <div class="video-btn">
-                 
-                  <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-primary btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-play"></i>
-                      </button>
-  
-                    
-                    <h6 class="fs-6 fw-bold mt-2 pt-2">مشاهدة فيديو</h6>
+          <div class="col video-column aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <div class="video-box">
+              <div class="video-date">
+                <div class="div-button">
+                    <div id="myBtn"></div>
                 </div>
+                <video  loop="" id="myVideo" poster="https://raitotec.com/public/assets_site/img/video_cover.webp" style="object-fit:cover;">
+                    <source src="https://raitotec.com/public/attachments/aboutUs/1702904407988.mp4" type="video/mp4">
+                    <track kind="captions" src="https://raitotec.com/public/attachments/aboutUs/captions.vtt" srclang="ar" label="العربية" default="">
+
+                  </video>
+            
+              </div> 
             </div>
            </div>
           
         </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="video-date-about">
-              
-                <video  loop="" id="myVideo-about"  alt="About Us">
-                    <source src="https://raitotec.com/public/attachments/aboutUs/1702904407988.mp4" type="video/mp4">
-                    <track kind="captions" src="https://raitotec.com/public/attachments/aboutUs/captions.vtt" srclang="ar" label="العربية" default="">
-                </video>
-            
-            </div>  
-          
-          </div>
-           
-          </div>
-        </div>
-      </div>
+   
     <!--about-us-->
    
      </section>
      <!--end-about-->
+     <section class="component-about pt-5 pb-5">
+      <div class="container">
+            <div class="row mx-0 justify-content-center">
+              <div class="col-md-8 text-center">
+                <h2 class="title-title">   خدمات رايتو </h2>
+               
+              </div>
+          </div>
+          <div class="steps-container pt-5">
+            <div class="step">
+              <div class="icon-container">
+                <img src="./assets/Asset-system/fuel.png" loading="lazy" alt="Discover Icon" />
+              </div>
+              <h3>تاهيل المحطات</h3>
+            
+            </div>
+        
+            <div class="step">
+              <div class="icon-container">
+                <img src="./assets/Asset-system/ux.png" loading="lazy" alt="Discover Icon" />
+              </div>
+              <h3>مواقع الاكترونية</h3>
+          
+            </div>
+            
+            <div class="step">
+              <div class="icon-container">
+                <img src="./assets/Asset-system/app-development.png" loading="lazy" alt="Discover Icon" />
+
+              </div>
+              <h3>تطبيقات الجوال</h3>
+          
+            </div>
+            <div class="step">
+              <div class="icon-container">
+                <img src="./assets/Asset-system/erp.png" loading="lazy" alt="Discover Icon" />
+
+              </div>
+              <h3> انظمة ERP</h3>
+          
+            </div>
+          </div>
+      </div>
+     </section>
      <!--services-->
       <section class="component-services pt-5 pb-5">
         <div class="container">
@@ -633,23 +654,7 @@
      <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
      <script src="./assets/js/loade.js" ></script>
      <script src="./assets/js/chang-langth.js" ></script>
-     <script>
-      // تحديد الفيديو والمودال
-      const video = document.getElementById('myVideo-about');
-      const modal = document.getElementById('exampleModal');
-  
-      // تشغيل الفيديو عند فتح المودال
-      modal.addEventListener('shown.bs.modal', () => {
-          video.play();
-      });
-  
-      // إيقاف الفيديو عند إغلاق المودال
-      modal.addEventListener('hidden.bs.modal', () => {
-          video.pause();
-          video.currentTime = 0; // إعادة الفيديو إلى البداية
-      });
-  </script>
-    
+   
     
      </body>
 </html>
