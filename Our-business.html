@@ -22,17 +22,19 @@
     <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/style-en.css" rel="stylesheet">
+    <link href="./assets/css/style-system.css" rel="stylesheet"><!--لينك خاص بالتصميم الجديد-->
+
 </head>
 <body>
      <!-------------------------start-loading-pag------------------------->
      <div class="component-stert">
           <div class="component--intro status--loaded">
-              <img src="./assets/img/logoar.webp" alt="logo">
+              <img src="./assets/img/logoar.webp" alt="logo" loading="lazy">
           </div>
       </div>
       <!---------------------------end-loading-pag------------------------->
      <!--nav-->
-     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index ">
+     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index">
       <div class="container">
         <a class="navbar-brand" href="index.html">
            <img src="./assets/img/logoar.webp" alt="logo">
@@ -48,45 +50,55 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
+            
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Services.html">
+              الخدمات
+            </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
+                <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
+              <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
+              </ul>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Services.html">
-                الخدمات
+              <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
+                البرامج
               </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
-                  <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
-                  <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
-                  البرامج
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
-                  <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
-                  <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
-                  <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة الموارد البشرية  </a></li>
-                  <li><a class="dropdown-item" href="Programs-pos.html">  برنامج   نقاط البيعpos  </a></li>
-                  <li><a class="dropdown-item" href="Programs-Other.html">     برامج اخرى  </a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Programs-Asset-system-tow.html">    برنامج ادارة الاصول  والصيانة</a></li>
 
-                </ul>
-              </li>
+                <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
+                <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
+                <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
+                <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة   المحطات  </a></li>
+             
+              </ul>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="Our-business.html">نماذج اعمالنا</a>
+                <a class="nav-link" href="prices.html"> اسعارنا</a>
            </li>
            <li class="nav-item">
                 <a class="nav-link" href="Blog.html">المدونة</a>
               </li>
-            <li class="nav-item">
+            <li class="nav-item nav-login-lang">
               <a class="nav-link" href="contact.html">تواصل معنا</a>
             </li>
-            <li class="nav-item nav-login-lang">
+            <!-- <li class="nav-item nav-login-lang">
                 <a class="nav-link" href="login.html">  تسجيل الدخول</a>
+           </li> -->
+           <li class="nav-item lang-item">
+                <!-- <a class="nav-link" href="#"> en</a> -->
+                <div class="language-switcher">
+                  <button class="lang-btn btn" id="arabic-btn" title="Switch to Arabic" >
+                    <img src="./assets/Asset-system/icon/Flag-Saudi-Arabia.webp" alt="Arabic" loading="lazy" />
+                  </button>
+                  <button class="lang-btn btn" id="english-btn" title="Switch to english" style="display: none;">
+                    <img src="./assets/Asset-system/icon/united-kingdom.png" alt="English" loading="lazy" />
+                  </button>
+                </div>
            </li>
-           <li class="nav-item nav-login-lang">
-                <a class="nav-link" href="#"> en</a>
-           </li>
+          
           </ul>
          
         </div>
@@ -94,6 +106,8 @@
     </nav>
      <!--end-nav-->
      <section class="component-hadeer">
+      <img src="./assets/Asset-system/pngwing.com (1).png" alt="img" loading="lazy">
+
       <div class="container">
           <h2 class="page-title">  نماذج أعمالنا 
           </h2>
@@ -184,104 +198,128 @@
       </div>
      </section>
      <!---->
-     <section class="pt-5 pb-5">
+       
+    
+    <section class="pt-5 pb-5">
       <div class="container">
         <div class="row mx-0 justify-content-center">
           <div class="col-md-8 text-center">
-            <h2 class="title-title">  لماذا تعتمد على رايتو للبرمجة والأنظمة المحاسبية - ERP  </h2>
-            <p class="pt-3 p-decerption">
-              تعتبر شركتنا رائدة في مجال إنشاء الأنظمة المحاسبية ERP، و الإدارة السحابية التي قدمـت بالفعـل حلولا تقنية متميزة وليس لدينا أي قيود تعـوق التطويــر المستمـــر والمتنـامـي ، مستشــرفيــن عهــدا جديـدا من التطــور التقنـي و نجـاح الاعمـال، واهم ما يميزنا ما يلي:
-            </p>
+            <h3 class="title-title"> 
+             لماذا تعتمد على رايتو
+            </h3>
+        
           </div>
         </div>
-       <div class="row mx-0 row-cols-lg-3 row-cols-md-2 row-cols-1 g-3 pt-5">
-          <div class="col d-flex">
-              <div class="about-item">
-                <img src="./assets/img/project-management.webp" alt="project-management">
-                <div class="px-3">
-                  <h6 class="title-title ">أحدث التقنيات الخدمية السحابية</h6>
-                  <p class="p-decerption pt-1">نستخدم أحدث التقنيات السحابية لتطوير وتقديم حلولنا، كما نتبع أفضل الممارسات ونواكب التغيرات السريعة في السوق المحلية والعالمية لضمان تقديم تقنيات متقدمة وموثوقة.</p>
+
+            <div class="mt-4 row mx-0 row-cols-lg-4 row-cols-md-3 row-cols-1 g-4">
+           
+              <div class="col aos-init" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div class=" card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/services-1.svg" alt="Assets">
+                  <div class="item-asset pt-3">
+                    <h4 class="title-asset">
+                     	دعم فني مجاني دايمًا معاك
+                    </h4>
+                 
+                  </div>
                 </div>
+              </div>
+              <div class=" col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-2.png" alt="Assets">
+                  <div class="item-asset pt-3">
+                    <h4 class="title-asset">
+                      	نعدّل النظام مجاني عشان يناسبك
+                    </h4>
+               
+                  </div>
+                </div>
+               
+                </div>
+              <div class="col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-3.png" alt="Assets">
+                  <div class="item-asset pt-3">
+                    <h6 class="title-asset">
+                     	الوصول من أي مكان وفي أي وقت 
+                    </h6>
+                   
+                  </div>
+                </div> 
+             
+                </div>
+              <div class="col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/decision-making/إدارة المصاريف.png" alt="Assets">
+                  <div class="item-asset pt-3">
+                    <h6 class="title-asset">
+                     	سعر مناسب ليك
+
+                    </h6>
                 
+                  </div>
+                </div> 
+                                 
               </div>
-          </div>
-          <!---->
-          <div class="col d-flex">
-            <div class="about-item">
-              <img src="./assets/img/link-other.webp" alt="service-v">
-              <div class="px-3">
-                <h6 class="title-title ">  تكامل وربط الأنظمة المتنوعة</h6>
-                <p class="p-decerption pt-1">لدينا القدرة على ربط أنظمتنا مع المنصات المختلفة، سواء كانت حكومية أو خاصة، وهذا يسمح للعملاء بالاستفادة من تكامل سلس كما يسهل تبادل المعلومات بين الأنظمة.
-                </p>
-              </div>
-              
-            </div>
-          </div>
-          <!---->
-          <!---->
-          <div class="col d-flex">
-            <div class="about-item">
-              <img src="./assets/img/programming.webp" alt="development">
-              <div class="px-3">
-                <h6 class="title-title ">      خدمات برمجية متنوعة</h6>
-                <p class="p-decerption pt-1"> 
-                  نقدم نظامًا محاسبيًا ERP يتميز بمرونته وقدرته على أن يكون متعدد المهام، وبذلك  يمكن للعملاء الاستفادة من مجموعة واسعة من الخدمات البرمجية المتنوعة التي تلبي احتياجاتهم الفريدة.
+              <div class="col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                  <div class="item-asset pt-3">
+                    <h6 class="title-asset">
+                     	تحليلات ذكية بذكاء اصطناعي
 
-                </p>
+                    </h6>
+                
+                  </div>
+                </div> 
+                                 
               </div>
-              
-            </div>
-          </div>
-          <!---->
-          <!---->
-          <div class="col d-flex">
-            <div class="about-item">
-              <img src="./assets/img/cyber-security.webp" alt="cyber-security">
-              <div class="px-3">
-                <h6 class="title-title ">      
-                    أمان وسيبرانية
-                </h6>
-                <p class="p-decerption pt-1"> 
-                  نحرص على تأمين خدماتنا بأعلى مستويات الأمان والحماية السيبرانية، كما نتبع معايير صارمة لضمان أمان بيانات العملاء واستقرار النظام.
-                </p>
-              </div>
-              
-            </div>
-          </div>
-          <!---->
-          <div class="col d-flex">
-            <div class="about-item">
-              <img src="./assets/img/page-quality.webp" alt="page-quality">
-              <div class="px-3">
-                <h6 class="title-title ">      
-                  الالتزام بمعايير جودة الخدمة 
-                </h6>
-                <p class="p-decerption pt-1"> 
-                  نحن نضع معايير جودة عالية لخدمتنا ونسعى جاهدين لتحسين أعمالنا بشكل مستمر، كما نستمع إلى آراء عملائنا ونعمل بنشاط على تلبية احتياجاتهم وتوفير حلول مبتكرة وموثوقة.
+              <div class="col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets" loading="lazy">
+                  <div class="item-asset pt-3">
+                    <h6 class="title-asset">
+                     	متوافق مع المعايير الحكومية
 
-                </p>
+                    </h6>
+                
+                  </div>
+                </div> 
+                                 
               </div>
-              
-            </div>
-          </div>
-          <!---->
-          <div class="col d-flex">
-            <div class="about-item">
-              <img src="./assets/img/member.webp" alt="member">
-              <div class="px-3">
-                <h6 class="title-title ">      
-                  فريق عمل ماهر
-                </h6>
-                <p class="p-decerption pt-1"> 
-                  يتميز فريقنا بالمهارات القوية في التعامل مع تحديات تطوير الأنظمة المحاسبية المعقدة، نحن نضمن توفير فريق متكامل يضم مبرمجين ومحللين محترفين يتفاعلون بشكل مثالي لتطوير وتنفيذ حلول ERP مخصصة وفقًا لمتطلبات العملاء.
+              <div class="col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/application/application-1.png" alt="Assets" loading="lazy">
+                  <div class="item-asset pt-3">
+                    <h6 class="title-asset">
+                      	نظام يشتغل مع كل الأجهزة والأنظمة
 
-                </p>
+                    </h6>
+                
+                  </div>
+                </div> 
+                                 
               </div>
-              
+              <div class="col aos-init"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <div class="card-depends about-item-best p-3">
+                  <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets" loading="lazy">
+                  <div class="item-asset pt-3">
+                    <h6 class="title-asset">
+                    	كل التقارير اللي تحتاجها جاهزة
+
+                    </h6>
+                
+                  </div>
+                </div> 
+                                 
+              </div>
+          
+
             </div>
-          </div>
-          <!---->
-       </div>
+           
+         
+          
+         
       </div>
      </section>
      <!---->
@@ -338,89 +376,7 @@
       </div>
     </section>
      <!--custumer-img-->
-    <!--Reviews customers-->
-    <section class="mt-5 pb-5 pt-5 component-reviews" >
-      <div class="text-center">
-        <h2 class="title-title text-white">    اراء عملائنا </h2>
-  
-      </div>
-      <div class="slider-reviews pt-5">
-        <div id="carouselExampleIndicators" class="carousel slide custemer-reviews" data-bs-ride="carousel">
-         
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="slider-1 ">
-                <div class="slider-img">
-                  <img src="./assets/img/ceo.webp" class="d-block" alt="...">
-                </div>
-               
-                <div class="slider-title">
-                  <h6 class="fw-bold text-white fs-4">Dawaa Care Experts</h6>
-                </div>
-                <p class="fw-bold text-white py-3">فريق المبرمجين لديهم يتفهم طلب العميل جيدا</p>
-              </div>
-            
-            </div>
-            <div class="carousel-item">
-              <div class="slider-1 ">
-                <div class="slider-img">
-                  <img src="./assets/img/ceo.webp" class="d-block" alt="...">
-                </div>
-                <div class="slider-title">
-                  <h6  class="fw-bold text-white fs-4">Dawaa Care Experts</h6>
-                </div>
-                <p class="fw-bold py-3 text-white">
-                  "أعجبتني المرونة والتعديلات الممكنة في البرامج المحاسبية لديهم، حيث يمكن تخصيصها لتلبية احتياجات شركتي بالضبط"
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="slider-1 ">
-                <div class="slider-img">
-                  <img src="./assets/img/ceo.webp" class="d-block" alt="...">
-                </div>
-                <div class="slider-title">
-                  <h6  class="fw-bold text-white fs-4">Dawaa Care Experts</h6>
-                </div>
-                <p class="fw-bold py-3 text-white">فريق المبرمجين لديهم يتفهم طلب العميل جيدا</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!--Reviews customers-->
-     <section class="content-project">
-      <div class="container">
-         <div class="row mx-0 row-cols-lg-2 row-cols-md-2 row-cols-1 justify-content-between align-items-center">
-            <div class="col defintion-abver">
-              <h6>  
-                لنبدأ مشروعك الآن!
 
-             </h6>
-             <p class="pt-3 mb-0">
-              فريقنا المبدع إلى جانبك لتؤسس نظام ERP احترافي يساعدك على زيادة مبيعاتك وتحسين عملك.
-            
-            
-            </p>
-            </div>
-            <div class="col text-start col-button-con">
-             <a href="contact.html" class="p-2 px-4 button-wiet">  تواصل معنا</a>
-            </div>
-         </div>
-         <div class="shape-tri">
-          <img class="shape-left" src="./assets/img/shap.webp" alt="shape">
-      </div>
-      </div>
-     </section>
      <footer class="component-footer  pt-55">
       <div class="container">
         <div class="row mx-0 pb-55 row-footer">
@@ -522,10 +478,11 @@
     </footer>
     
      <!--advertisements-->
-   <script src="./assets/js/jquery.js"></script>
-   <script src="assets/js/owl.carousel.min.js"></script>
-   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script src="./assets/js/loade.js"></script>
+     <script src="./assets/js/jquery.js"></script>
+     <script src="assets/js/owl.carousel.min.js"></script>
+     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="./assets/js/loade.js"></script>
+     <script src="./assets/js/chang-langth.js" ></script>
 </body>
 </html>

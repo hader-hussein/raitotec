@@ -27,7 +27,7 @@
 .p-decerption p ,.about-item-best .p-decerption{
     color: #605f5f;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
 }
 /* استهداف الصور في العناصر الزوجية */
 .Advantages .row:nth-child(even) {
@@ -431,6 +431,10 @@ width: 100%;
   .steps-container .step:nth-child(4) .icon-container {
     background-color: #6dd12a; /* Lime Green */
   }
+  .contact-content-c a {
+    color: var(--color-primary);
+    font-size: 16px;
+}
   /* Line between steps */
   @media (min-width:768px) {
     .steps-container .step:not(:last-child)::before {

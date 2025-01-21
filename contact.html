@@ -22,17 +22,19 @@
     <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/style-en.css" rel="stylesheet">
+    <link href="./assets/css/style-system.css" rel="stylesheet"><!--لينك خاص بالتصميم الجديد-->
+
 </head>
 <body>
      <!-------------------------start-loading-pag------------------------->
      <div class="component-stert">
           <div class="component--intro status--loaded">
-              <img src="./assets/img/logoar.webp" alt="logo">
+              <img src="./assets/img/logoar.webp" alt="logo" loading="lazy">
           </div>
       </div>
       <!---------------------------end-loading-pag------------------------->
      <!--nav-->
-     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index ">
+     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index">
       <div class="container">
         <a class="navbar-brand" href="index.html">
            <img src="./assets/img/logoar.webp" alt="logo">
@@ -49,45 +51,54 @@
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
             
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Services.html">
+              الخدمات
+            </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
+                <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
+              <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
+              </ul>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Services.html">
-                الخدمات
+              <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
+                البرامج
               </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
-                  <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
-                  <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
-                  البرامج
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
-                  <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
-                  <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
-                  <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة الموارد البشرية  </a></li>
-                  <li><a class="dropdown-item" href="Programs-pos.html">  برنامج   نقاط البيعpos  </a></li>
-                  <li><a class="dropdown-item" href="Programs-Other.html">     برامج اخرى  </a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Programs-Asset-system-tow.html">    برنامج ادارة الاصول  والصيانة</a></li>
 
-                </ul>
-              </li>
+                <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
+                <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
+                <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
+                <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة   المحطات  </a></li>
+             
+              </ul>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="Our-business.html">نماذج اعمالنا</a>
+                <a class="nav-link" href="prices.html"> اسعارنا</a>
            </li>
            <li class="nav-item">
                 <a class="nav-link" href="Blog.html">المدونة</a>
               </li>
-            <li class="nav-item">
+            <li class="nav-item nav-login-lang">
               <a class="nav-link" href="contact.html">تواصل معنا</a>
             </li>
-            <li class="nav-item nav-login-lang">
+            <!-- <li class="nav-item nav-login-lang">
                 <a class="nav-link" href="login.html">  تسجيل الدخول</a>
+           </li> -->
+           <li class="nav-item lang-item">
+                <!-- <a class="nav-link" href="#"> en</a> -->
+                <div class="language-switcher">
+                  <button class="lang-btn btn" id="arabic-btn" title="Switch to Arabic" >
+                    <img src="./assets/Asset-system/icon/Flag-Saudi-Arabia.webp" alt="Arabic" loading="lazy" />
+                  </button>
+                  <button class="lang-btn btn" id="english-btn" title="Switch to english" style="display: none;">
+                    <img src="./assets/Asset-system/icon/united-kingdom.png" alt="English" loading="lazy" />
+                  </button>
+                </div>
            </li>
-           <li class="nav-item nav-login-lang">
-                <a class="nav-link" href="#"> en</a>
-           </li>
+          
           </ul>
          
         </div>
@@ -96,6 +107,8 @@
      <!--end-nav-->
      <!---->
      <section class="component-hadeer">
+      <img src="./assets/Asset-system/pngwing.com (1).png" alt="img" loading="lazy">
+
         <div class="container">
             <h2 class="page-title">تواصل معنا</h2>
         </div>
@@ -114,7 +127,7 @@
               <div class="col">
                 <h6  class="title-title">معلومات  الاتصال</h6>
                 <div class="component-contents pt-5">
-                  <div class="contact-content mb-3">
+                  <div class="contact-content-c mb-3">
                     <a class="content-box" href="https://maps.app.goo.gl/YTLGN9WXiyjrZhZK9">
                       
                         <i class="fa fa-location-dot"></i>
@@ -122,13 +135,13 @@
                         طريق دائري 12993 ، 27              
                     </a>
                   </div>
-                  <div class="contact-content mb-3">
+                  <div class="contact-content-c mb-3">
                     <a href="tel:+966538499438" class="content-box">
                         <i class="fa fa-phone"></i>
                         <span>966538499438+</span>
                     </a>
                   </div>
-                  <div class="contact-content mb-3">
+                  <div class="contact-content-c mb-3">
                     <a href="mailto:info@raitotec.com" class="content-box">
                         <i class="fas fa-envelope"></i>
                         info@raitotec.com
@@ -172,29 +185,7 @@
            </div>
         </div>
      </section>
-     <section class="content-project mt-5">
-      <div class="container">
-         <div class="row mx-0 row-cols-lg-2 row-cols-md-2 row-cols-1 justify-content-between align-items-center">
-            <div class="col defintion-abver">
-              <h6>  
-                لنبدأ مشروعك الآن!
-
-             </h6>
-             <p class="pt-3 mb-0">
-              فريقنا المبدع إلى جانبك لتؤسس نظام ERP احترافي يساعدك على زيادة مبيعاتك وتحسين عملك.
-            
-            
-            </p>
-            </div>
-            <div class="col text-start col-button-con">
-             <a href="contact.html" class="p-2 px-4 button-wiet">  تواصل معنا</a>
-            </div>
-         </div>
-         <div class="shape-tri">
-          <img class="shape-left" src="./assets/img/shap.webp" alt="shape">
-      </div>
-      </div>
-    </section>
+    
     <footer class="component-footer  pt-55">
       <div class="container">
         <div class="row mx-0 pb-55 row-footer">
@@ -294,12 +285,21 @@
         </div>
       </div>
     </footer>
-    
+     <!--whatsapp-->
+     <div class="compoent-price-hadder">
+      <div class="back">
+            <a href="https://wa.me/966538499438" class="img-whatsapp px-2" title="تواصل واتساب"> 
+              <img src="./assets/Asset-system/icon/whatsapp.png" alt="whatsapp" loading="lazy">
+             </a>
+      </div>
+      
+    </div>
      <!--advertisements-->
-   <script src="./assets/js/jquery.js"></script>
-   <script src="assets/js/owl.carousel.min.js"></script>
-   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script src="./assets/js/loade.js"></script>
+     <script src="./assets/js/jquery.js"></script>
+     <script src="assets/js/owl.carousel.min.js"></script>
+     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="./assets/js/loade.js"></script>
+     <script src="./assets/js/chang-langth.js" ></script>
 </body>
 </html>

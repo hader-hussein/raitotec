@@ -20,17 +20,19 @@
     <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/style-en.css" rel="stylesheet">
+    <link href="./assets/css/style-system.css" rel="stylesheet"><!--لينك خاص بالتصميم الجديد-->
+
 </head>
 <body>
      <!-------------------------start-loading-pag------------------------->
      <div class="component-stert">
           <div class="component--intro status--loaded">
-              <img src="./assets/img/logoar.webp" alt="logo">
+              <img src="./assets/img/logoar.webp" alt="logo" loading="lazy">
           </div>
       </div>
       <!---------------------------end-loading-pag------------------------->
      <!--nav-->
-     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index ">
+     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top navber-index">
       <div class="container">
         <a class="navbar-brand" href="index.html">
            <img src="./assets/img/logoar.webp" alt="logo">
@@ -47,45 +49,54 @@
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
             
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Services.html">
+              الخدمات
+            </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
+                <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
+              <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
+              </ul>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Services.html">
-                الخدمات
+              <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
+                البرامج
               </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="services-Fuel.html">تاهيل المحطات</a></li>
-                  <li><a class="dropdown-item" href="services-web.html">تصميم المواقع الاكترونية </a></li>
-                  <li><a class="dropdown-item" href="services-mobile.html">تصميم تطبيقات الجوال  </a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Programs.html" role="button">
-                  البرامج
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
-                  <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
-                  <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
-                  <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة الموارد البشرية  </a></li>
-                  <li><a class="dropdown-item" href="Programs-pos.html">  برنامج   نقاط البيعpos  </a></li>
-                  <li><a class="dropdown-item" href="Programs-Other.html">     برامج اخرى  </a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Programs-Asset-system-tow.html">    برنامج ادارة الاصول  والصيانة</a></li>
 
-                </ul>
-              </li>
+                <li><a class="dropdown-item" href="Programs-Accounting.html"> برنامج المحاسبة</a></li>
+                <li><a class="dropdown-item" href="Programs-stores.html">  برنامج ادارة المخازن </a></li>
+                <li><a class="dropdown-item" href="Programs-delegates.html">  برنامج ادارة المناديب  </a></li>
+                <li><a class="dropdown-item" href="Programs-Personnel.html">  برنامج ادارة   المحطات  </a></li>
+             
+              </ul>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="Our-business.html">نماذج اعمالنا</a>
+                <a class="nav-link" href="prices.html"> اسعارنا</a>
            </li>
            <li class="nav-item">
                 <a class="nav-link" href="Blog.html">المدونة</a>
               </li>
-            <li class="nav-item">
+            <li class="nav-item nav-login-lang">
               <a class="nav-link" href="contact.html">تواصل معنا</a>
             </li>
-            <li class="nav-item nav-login-lang">
+            <!-- <li class="nav-item nav-login-lang">
                 <a class="nav-link" href="login.html">  تسجيل الدخول</a>
+           </li> -->
+           <li class="nav-item lang-item">
+                <!-- <a class="nav-link" href="#"> en</a> -->
+                <div class="language-switcher">
+                  <button class="lang-btn btn" id="arabic-btn" title="Switch to Arabic" >
+                    <img src="./assets/Asset-system/icon/Flag-Saudi-Arabia.webp" alt="Arabic" loading="lazy" />
+                  </button>
+                  <button class="lang-btn btn" id="english-btn" title="Switch to english" style="display: none;">
+                    <img src="./assets/Asset-system/icon/united-kingdom.png" alt="English" loading="lazy" />
+                  </button>
+                </div>
            </li>
-           <li class="nav-item nav-login-lang">
-                <a class="nav-link" href="#"> en</a>
-           </li>
+          
           </ul>
          
         </div>
@@ -93,14 +104,14 @@
     </nav>
      <!--end-nav-->
      <section class="component-hadeer">
+      <img src="./assets/Asset-system/pngwing.com (1).png" alt="img" loading="lazy">
+
       <div class="container">
           <h2 class="page-title pt-5">  
             برنامج إدارة المناديب
 
           </h2>
-          <p class="pt-3 text-white fs-5 col-md-8">
-            أدر العملية البيعية التي يقوم بها مندوبيك كاملة من خلال نظام ERP احترافي.
-          </p>
+        
       </div>
      </section>
      <!---->
@@ -125,389 +136,257 @@
         </div>
      </section>
      <!---->
-     <section class="component-accounting pt-5 pb-5 mt-5">
-      <div class="container">
-        <h2 class="title-title text-center"> 
-          أدِّر تطبيق المناديب  باحترافية مع رايتو
-        </h2>
-        <div class="row mx-0 row-cols-lg-4 row-cols-md-2 row-cols-1 g-4 pt-5 mt-3">
-            <div class="col mb-4">
-              <div class="card-accounting text-center">
-               
-                  <img class="img-accountiong" src="./assets/img/dele.svg" alt="accounting">
-                  <h6 class="title-accountin">  خط السير</h6>
-              </div>
-              
-            </div>
-            <!---->
-            <div class="col mb-4">
-              <div class="card-accounting text-center">
-               
-                  <img class="img-accountiong" src="./assets/img/dele2.svg" alt="accounting">
-                  <h6 class="title-accountin">    زيارات العملاء
-                  </h6>
-              </div>
-              
-            </div>
-            <!---->
-              <!---->
-              <div class="col mb-4">
-                <div class="card-accounting text-center">
-                 
-                    <img class="img-accountiong" src="./assets/img/dele3.svg" alt="accounting">
-                    <h6 class="title-accountin">     مديونية المندوب
-                    </h6>
-                </div>
-                
-              </div>
-              <!---->
-              <!---->
-              <div class="col mb-4">
-                <div class="card-accounting text-center">
-                 
-                    <img class="img-accountiong" src="./assets/img/dele4.svg" alt="accounting">
-                    <h6 class="title-accountin">    الكمية المستهدفة
-                    </h6>
-                </div>
-                
-              </div>
-              <!----> 
-                <!---->
-            <div class="col mb-4">
-              <div class="card-accounting text-center">
-               
-                  <img class="img-accountiong" src="./assets/img/dele5.svg" alt="accounting">
-                  <h6 class="title-accountin">      القيمة المستهدفة
-                  </h6>
-              </div>
-              
-            </div>
-            <!----> 
-              <!---->
-              <div class="col mb-4">
-                <div class="card-accounting text-center">
-                 
-                    <img class="img-accountiong" src="./assets/img/dele6.svg" alt="accounting">
-                    <h6 class="title-accountin">    تتبع المناديب
-                    </h6>
-                </div>
-                
-              </div>
-              <!---->
-                <!---->
-            <div class="col mb-4">
-              <div class="card-accounting text-center">
-               
-                  <img class="img-accountiong" src="./assets/img/dele7.svg" alt="accounting">
-                  <h6 class="title-accountin">    طباعة الفواتير
-                  </h6>
-              </div>
-              
-            </div>
-              <!---->
-              <div class="col mb-4">
-                <div class="card-accounting text-center">
-                 
-                    <img class="img-accountiong" src="./assets/img/dele8.svg" alt="accounting">
-                    <h6 class="title-accountin">  تقارير مرنة</h6>
-                </div>
-                
-              </div>
-              <!---->
-            <!---->
-        </div>
-      </div>
-     </section>
-     <!---->
-      <section class="component-work-accounting pt-5 pb-5 mt-5">
-        <div class="container">
-          <h2 class="title-title text-center"> 
-            ما الذي يمكنك القيام به من خلال برنامج إدارة المناديب؟
-
-          </h2>
-          <div class="row mx-0 row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 pt-5 mt-3">
-             <div class="col d-flex">
-                <div class="about-item-best text-center">
-                  <img src="./assets/img/dele6.svg" alt="Invoice">
-                  <div class="px-3">
-                    <h6 class="title-title">   تتبع مسار المندوب
-
-
-
-                    </h6>
-                    <p class="p-decerption pt-1">
-                      يتيح لك برنامج إدارة المناديب تتبع مسار المندوب بدقة، ستتمكن من رؤية موقع المندوب في الوقت الحقيقي ومسار سفره أثناء قيامه بالزيارات وتسليم المنتجات، يساعدك هذا في مراقبة أداء المناديب، تحديد الوقت المناسب للزيارات، وتحسين تخطيط الجدول الزمني للمناديب.
-
-                    </p>
-                  </div>
-                </div>
-             </div>
-             <!---->
-             <div class="col d-flex">
-              <div class="about-item-best text-center">
-                <img src="./assets/img/dele4.svg" alt="Technical Support">
-                <div class="px-3">
-                  <h6 class="title-title">       
-                    متابعة المرتجعات
-
-
-                  </h6>
-                  <p class="p-decerption pt-1">
-                    يتيح لك برنامج إدارة المناديب متابعة المرتجعات بكل سهولة، وستتمكن من تسجيل وتتبع المنتجات التي تمت إعادتها من قبل العملاء ومتابعة حالة استلامها ومعالجتها، يساعد هذا في تحسين عملية إدارة المرتجعات وتقديم خدمة عملاء محسنة.
-                  </p>
-                </div>
-              </div>
-             </div>
-           <!---->
-              <!---->
-              <div class="col d-flex">
-                <div class="about-item-best text-center">
-                  <img src="./assets/img/dele8.svg" alt="Technical Support">
-                  <div class="px-3">
-                    <h6 class="title-title">       
-                      توفير تقارير وتحليلات
-
-
-                    </h6>
-                    <p class="p-decerption pt-1">
-                      برنامج إدارة المناديب يوفر تقارير وتحليلات شاملة حول أداء المناديب، وعمليات التسليم، ومعدلات المرتجعات، والأداء العام للفريق، يمكنك الاستفادة من هذه التقارير لاتخاذ قرارات استراتيجية تقوم على البيانات وتحسين كفاءة عمل فريق المناديب.                    </p>
-                  </div>
-                </div>
-             </div>
-             <!---->
-              <!---->
-              <div class="col d-flex">
-                <div class="about-item-best text-center">
-                  <img src="./assets/img/Personnel8.svg" alt="Technical Support">
-                  <div class="px-3">
-                    <h6 class="title-title">       
-                      تخطيط الزيارات والمهام
-
-
-
-
-
-
-                    </h6>
-                    <p class="p-decerption pt-1">
-                      برنامج إدارة المناديب يساعدك في تخطيط زيارات المناديب وتعيين المهام بشكل فعال، يمكنك تحديد أولويات الزيارات وتوزيع المهام بناءً على المواقع والعملاء والمنتجات، يساعد هذا في تحسين تنظيم العمل وتعزيز إنتاجية المناديب.
-                    
-                    </p>
-                  </div>
-                </div>
-             </div>
-             <!---->
-             <!---->
-             
-           <!---->
-           <!---->
-           
-         <!---->
-          </div>
-        </div>
-      </section>
-     <!---->
-     <div class="mt-5 pb-5">
-      <section class="component-adver">
+     <section class="component-work-accounting component-asset  pb-5 mt-5">
+        
+        
+      <h2 class="title-title text-center"> 
+        المزايا الرئيسية للنظام
+      </h2>
+      <div class="component-programs pt-5 pb-5">
+        <div class="pattern pattern-top">
+          <img src="assets/Asset-system/pngwing.com.png"alt="patern" loading="lazy">
+       </div>
        
         <div class="container">
-           <div class="row mx-0 row-cols-lg-2 row-cols-md-2 row-cols-1 justify-content-between align-items-center">
-              <div class="col defintion-abver">
-                <h6> 
-
-                  أسس نظام لإدارة المناديب
-
-
-               </h6>
-               <p class="pt-3 mb-0">
-                تابع خط سير مندوبي الشحن بالإضافة إلى كمية المخزون، واستعلم عن المرتجعات من خلال نظام ERP احترافي.
-              
-              </p>
-              </div>
-              <div class="col text-start mt-md-0 mt-5">
-               <a href="contact.html" class="p-3 px-4 button-stert">    تواصل معنا الآن
-              </a>
-              </div>
-           </div>
-        </div>
-     </section>
-     </div>
-     <!---->
-     <section class="component-best mt-5 pt-5 pb-5">
-      <div class="container">
-        <h2 class="title-title">  
-          
-          
-           لماذا تحصل على برنامج <BR>إدارة المبيعات من خلال رايتو؟
-        </h2>
-          <div class="row mx-0 row-cols-lg-3 row-cols-md-2 row-cols-1 g-3 pt-5">
-            <div class="col d-flex">
-                <div class="about-item-best">
-                  <img src="./assets/img/Technical-Support.webp" alt="Technical Support">
-                  <div class="px-3">
-                    <h6 class="title-title ">   دعم فني مجاناً</h6>
-                    <p class="p-decerption pt-1">نقدم دعمًا فنيًا مجانيًا لعملائنا، وفريق الدعم لدينا متاح للمساعدة في حل أي مشكلة أو استفسار يواجهه العملاء؛ فنحن نولي أهمية كبيرة لتوفير تجربة عملاء مرضية ونسعى جاهدين لضمان رضاهم الكامل.
-                    </p>
-                  </div>
-                  
-               
-               </div>
-            </div>
-            <!---->
-            <div class="col d-flex">
-              <div class="about-item-best">
-                <img src="./assets/img/experience.webp" alt="experience">
-                <div class="px-3">
-                  <h6 class="title-title ">     تجربة مخصصة</h6>
-                  <p class="p-decerption pt-1"> 
-                    نفهم أن كل شركة لديها احتياجات ومتطلبات فريدة؛ ولذلك نعمل على تصميم وتنفيذ حلول مخصصة تناسب تلك الاحتياجات بدقة، كما نعمل عن كثب مع العملاء لفهم متطلباتهم وتقديم الحلول التي تلبي تلك المتطلبات بالضبط.
-  
-                  </p>
-                </div>
-                
-             
-             </div>
-          </div>
-            <!---->
-             <!---->
-             <div class="col d-flex">
-              <div class="about-item-best">
-                <img src="./assets/img/Easy.webp" alt="Easy">
-                <div class="px-3">
-                  <h6 class="title-title ">      واجهة سهلة الاستخدام
-                  </h6>
-                  <p class="p-decerption pt-1"> 
-                    نهتم بتوفير واجهات مستخدم بديهية وسهلة الاستخدام تسهل عملية التنقل والاستفادة القصوى من المميزات التي تدعمها، يتيح ذلك للمستخدمين الجدد التكيف بسرعة ويساعدهم على تحقيق أقصى استفادة من الحلول التي نقدمها.
-  
-                  </p>
-                </div>
-                
-             
-             </div>
-             </div>
-            <!---->
-            <!---->
-            <div class="col d-flex">
-              <div class="about-item-best">
-                <img src="./assets/img/Fair-price.webp" alt="Easy">
-                <div class="px-3">
-                  <h6 class="title-title ">    سعر عادل
-                  </h6>
-                  <p class="p-decerption pt-1"> 
-                    نلتزم بتوفير أسعار عادلة ومناسبة للأنظمة البرمجية التي نقدمها؛  فنحن نقدر أهمية توفير قيمة ممتازة لعملائنا، ولذلك نحن نضع أسعارنا بعناية لتكون تنافسية وملائمة لمتطلبات السوق وميزانية العملاء.
-  
-                  </p>
-                </div>
-                
-             
-             </div>
-             </div>
-            <!---->
-            <!---->
-            <div class="col d-flex">
-              <div class="about-item-best">
-                <img src="./assets/img/Time.webp" alt="Time ">
-                <div class="px-3">
-                  <h6 class="title-title ">    توفير الوقت والجهد
-                  </h6>
-                  <p class="p-decerption pt-1"> 
-                    من خلال حلولنا وبرامجنا المتقدمة نساعد عملائنا على توفير الوقت والجهد، فنحن نقوم بتبسيط العمليات، وتحسين التنظيم، وتوفير أدوات وميزات تسهل إدارة الأعمال، هذا يسمح للعملاء بتحقيق كفاءة أعلى وتحقيق نتائج أفضل بأقل جهد.
-  
-                  </p>
-                </div>
-                
-             
-             </div>
-             </div>
-            <!---->
-            <!---->
-            <div class="col d-flex">
-              <div class="about-item-best">
-                <img src="./assets/img/Continuous.webp" alt="Continuous">
-                <div class="px-3">
-                  <h6 class="title-title ">   تحديثات وتطوير مستمر
-                  </h6>
-                  <p class="p-decerption pt-1"> 
-                    نلتزم بتطوير وتحسين أنظمتنا المحاسبية بشكل مستمر، كما نتابع التطورات التكنولوجية ونستمع إلى ملاحظات العملاء ومتطلبات السوق لتحديث وتطوير برامجنا بشكل منتظم. يتيح ذلك للعملاء الاستفادة من التحديثات الجديدة والميزات المحسّنة والتكنولوجيات الأحدث، مما يساعدهم على الابتكار والبقاء في المقدمة في سوقهم.
-  
-                  </p>
-                </div>
-                
-             
-             </div>
-             </div>
-            <!---->
-         </div>
-      </div>
-    </section>
-     <!---->
-     <section class="component-prices mt-5 pt-5 pb-5">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="title-title"> 
-            باقات إدارة المناديب
-          </h2>
+          <div class="Advantages">
+            
+            <div class="row mx-0  mb-5 pb-4 g-5 align-items-center">
+              <div class="col-12 col-md-8 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
     
-      </div>
-        <div class="row mx-0 row-cols-lg-3 row-cols-md-2 row-cols-1 pt-5">
-           <div class="col col-peicess">
-             <div class="price_box_inner pe-3 px-3">
-               <div class="nk-pricing-head pb-2">
-                <h5 class="pt-3">الباقة الاساسية</h5>
-                 <h3 class="price-component text-center pt-3">
-                 <span class="span-price">100</span>
-                 ريال 
-                   <span>/شهريا</span>
-                 </h3>
-                 
-                 
-                 <p class="pt-3 text-center">ادفع<span class="spen-selery fw-bold">960</span>ريال/سنويا</p>
-               </div>
-              
-             </div>
-           </div>
-           <!---->
-           <div class="col col-peicess">
-             <div class="price_box_inner pe-3 px-3">
-               <div class="nk-pricing-head pb-2">
-                <h5 class="pt-3"> الباقة المتقدمة</h5>
-                 <h3 class="price-component text-center pt-3">
-                 <span class="span-price">150</span>
-                 ريال 
-                   <span>/شهريا</span>
-                 </h3>
-                 
-                 <p class="pt-3 text-center">ادفع<span class="spen-selery fw-bold">1440</span>ريال/سنويا</p>
-
-
-               </div>
+                <h2 class="title-title"> 
+                  مميزات الإدارة والتحكم
+                </h2>
              
-             </div>
-           </div>
-           <!---->
-           <div class="col col-peicess">
-             <div class="price_box_inner pe-3 px-3">
-               <div class="nk-pricing-head pb-2">
-                <h5 class="pt-3">الباقة الشاملة</h5>
-                 <h3 class="price-component text-center pt-3">
-                 <span class="span-price">200</span>
-                 ريال 
-                   <span>/شهريا</span>
-                 </h3>
-                 <p class="pt-3 text-center">ادفع<span class="spen-selery fw-bold">1920</span>ريال/سنويا</p>
+                <div class="mt-4">
+                 <ul>
+                  <li class="mb-2 p-decerption">
+                    <div class="d-flex ">
+                      <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-1.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                           فواتير المبيعات
+                        </h6>
+                       <p class="pt-1">
+                         تسجّل كل عمليات البيع بسهولة وسرعة
+                      
+                      </p>
+                      </div>
+                    </div>
+                   
+                   
+                
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-2.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          مردودات المبيعات
+                        </h6>
+                       <p class="pt-1">
+                        لو صار استرجاع لأي منتج، تقدر تديره بكل سلاسة      
+                      
+                      
+                      </p>
+                      </div>
+                    </div>
+                   
+                    </li>
+                  <li class="mb-2 p-decerption">
+                    <div class="d-flex ">
+                      <img class="img-repet" src="./assets/Asset-system/icon/Assets/Assets-3.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          سداد الفواتير
+                        </h6>
+                       <p class="pt-1">
+                        متابعة المدفوعات اللي وصلت من العملاء.
+                      
+                      
+                      </p>
+                      </div>
+                    </div> 
+                 
+                    </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          سند القبض
 
-               </div>
+                        </h6>
+                       <p class="pt-1">
+                        توثيق أي مبلغ يتم استلامه من العملاء
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          استلام البضاعة
+
+                        </h6>
+                       <p class="pt-1">
+                        متابعة استلام المنتجات من الموردين بدقة                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          تقفيل اليومية
+
+                        </h6>
+                       <p class="pt-1">
+                        تقفل يومك المالي بكل وضوح وتعرف إيراداتك ومصروفاتك.
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          تقارير المخازن
+
+                        </h6>
+                       <p class="pt-1">
+                        معلومات دقيقة عن البضاعة الموجودة في المخازن.
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          تقارير المبيعات
+
+                        </h6>
+                       <p class="pt-1">
+                        نظرة شاملة على مبيعاتك اليومية أو الشهرية. 
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          متابعة التارجت
+
+                        </h6>
+                       <p class="pt-1">
+                        تعرف وين وصلت بالنسبة لهدفك البيعي
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          تتبع المناديب
+
+                        </h6>
+                       <p class="pt-1">
+                        تشوف تحركات فريق المبيعات وتتابع أداؤهم. 
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          عمل الزيارات
+
+                        </h6>
+                       <p class="pt-1">
+                        تسجل كل زيارات المناديب للعملاء بسهولة. 
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          حد وفترة المديونية للعميل
+
+                        </h6>
+                       <p class="pt-1">
+                        تتابع الحد الائتماني وفترة السداد لكل عميل.
+                      
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                  <li class="mb-2 p-decerption"> 
+                    <div class="d-flex ">
+                      <img class="img-repet"  src="./assets/Asset-system/icon/Assets/Assets-4.png" alt="Assets">
+                      <div class="item-asset px-2">
+                        <h6 class="title-asset">
+                          خطوط السير
+
+                        </h6>
+                       <p class="pt-1">
+                        تسجل كل زيارات المناديب للعملاء بسهولة. 
+                        تخطيط مسارات المناديب بشكل منظم
+                      </p>
+                      </div>
+                    </div> 
+                                     
+                  </li>
+                 </ul>
+    
+                </div>
                
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <img class="sales-img img-one animate-float-y" src="./assets/Asset-system/services-1.png" loading="lazy" alt="sales">
+              </div>
              </div>
-           </div>
-        </div>
-        <div class="text-center mt-5">
           
-          <a href="contact.html" class="p-2 px-4 button-stert button-mor">   ابدا الان</a>
-          
+          </div>
+         
         </div>
+        <div class="pattern pattern-bootom">
+          <img src="assets/Asset-system/pngwing.com.png"alt="patern" loading="lazy">
+       </div>
       </div>
-    </section>
+      
+  </section>
+    
   <!--custumer-img-->
   <section class="component-custemer mt-5 pb-5">
     <div class="text-center">
@@ -561,90 +440,8 @@
     </div>
   </section>
    <!--custumer-img-->
-  <!--Reviews customers-->
-  <section class="mt-5 pb-5 pt-5 component-reviews" >
-    <div class="text-center">
-      <h2 class="title-title text-white">    اراء عملائنا </h2>
-
-    </div>
-    <div class="slider-reviews pt-5">
-      <div id="carouselExampleIndicators" class="carousel slide custemer-reviews" data-bs-ride="carousel">
-       
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="slider-1 ">
-              <div class="slider-img">
-                <img src="./assets/img/ceo.webp" class="d-block" alt="...">
-              </div>
-             
-              <div class="slider-title">
-                <h6 class="fw-bold text-white fs-4">Dawaa Care Experts</h6>
-              </div>
-              <p class="fw-bold text-white py-3">فريق المبرمجين لديهم يتفهم طلب العميل جيدا</p>
-            </div>
-          
-          </div>
-          <div class="carousel-item">
-            <div class="slider-1 ">
-              <div class="slider-img">
-                <img src="./assets/img/ceo.webp" class="d-block" alt="...">
-              </div>
-              <div class="slider-title">
-                <h6  class="fw-bold text-white fs-4">Dawaa Care Experts</h6>
-              </div>
-              <p class="fw-bold py-3 text-white">
-                "أعجبتني المرونة والتعديلات الممكنة في البرامج المحاسبية لديهم، حيث يمكن تخصيصها لتلبية احتياجات شركتي بالضبط"
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slider-1 ">
-              <div class="slider-img">
-                <img src="./assets/img/ceo.webp" class="d-block" alt="...">
-              </div>
-              <div class="slider-title">
-                <h6  class="fw-bold text-white fs-4">Dawaa Care Experts</h6>
-              </div>
-              <p class="fw-bold py-3 text-white">فريق المبرمجين لديهم يتفهم طلب العميل جيدا</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <!--Reviews customers-->
-     <!---->
-     <section class="content-project">
-      <div class="container">
-         <div class="row mx-0 row-cols-lg-2 row-cols-md-2 row-cols-1 justify-content-between align-items-center">
-            <div class="col defintion-abver">
-              <h6>  
-                لنبدأ مشروعك الآن!
-
-             </h6>
-             <p class="pt-3 mb-0">
-              فريقنا المبدع إلى جانبك لتؤسس نظام ERP احترافي يساعدك على زيادة مبيعاتك وتحسين عملك.
-            
-            
-            </p>
-            </div>
-            <div class="col text-start col-button-con">
-             <a href="#" class="p-2 px-4 button-wiet">  تواصل معنا</a>
-            </div>
-         </div>
-         <div class="shape-tri">
-          <img class="shape-left" src="./assets/img/shap.webp" alt="shape">
-      </div>
-      </div>
-     </section>
+ 
+     
      <footer class="component-footer  pt-55">
       <div class="container">
         <div class="row mx-0 pb-55 row-footer">
@@ -746,10 +543,10 @@
     </footer>
     
      <!--advertisements-->
-   <script src="./assets/js/jquery.js"></script>
-   <script src="assets/js/owl.carousel.min.js"></script>
-   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script src="./assets/js/loade.js"></script>
+     <script src="./assets/js/jquery.js"></script>
+     <script src="assets/js/owl.carousel.min.js"></script>
+     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="./assets/js/loade.js"></script>
 </body>
 </html>
