@@ -172,9 +172,9 @@ color: var(--color-hover);
           border-bottom: 1px solid var(--color-secondary);
           transition: 0.8s;
       }
-      .navber-index .collapse.show{
+      /* .navber-index .collapse.show{
         background-color: #212529;
-      }
+      } */
       .navber-index .dropdown-menu.show{
 
 color: var(--color-default);

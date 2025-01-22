@@ -111,11 +111,7 @@ font-size: 33px;
     line-height: 29px;
     font-weight: 400;
 }
-.navber-index .collapse.show {
-    background-color: #ffffff;
-  
-    box-shadow: 0px 10px 10px #cddcda4f;
-}
+
 .img-whatsapp img{
     width: 48px;
     height: 48px;
@@ -435,6 +431,14 @@ width: 100%;
     color: var(--color-primary);
     font-size: 16px;
 }
+.navber-index.scrolled .collapse.show{
+  background: var(--color-secondary) !important;
+  border-bottom: 1px solid var(--color-secondary);
+  transition: 0.8s;
+}
+.navber-index .collapse.show{
+  background-color: #fff;
+}
   /* Line between steps */
   @media (min-width:768px) {
     .steps-container .step:not(:last-child)::before {
@@ -456,6 +460,13 @@ width: 100%;
         flex-wrap: wrap;
 
     }
+ 
+  
+}
+@media (max-width:1024px) {
+  .navbar-toggler {
+    background-color: #fff;
+        }
 }
 .img-repet{
   width: 40px;
